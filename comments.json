@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "postId": 1,
+    "userId": 2,
+    "body": "Great insights on technology in education!",
+    "createdAt": "2024-01-15T12:00:00Z"
+  },
+  {
+    "id": 2,
+    "postId": 1,
+    "userId": 3,
+    "body": "I agree, online platforms are changing everything.",
+    "createdAt": "2024-01-15T13:00:00Z"
+  },
+  {
+    "id": 3,
+    "postId": 2,
+    "userId": 4,
+    "body": "Sustainability is so important nowadays.",
+    "createdAt": "2024-01-20T15:00:00Z"
+  },
+  {
+    "id": 4,
+    "postId": 2,
+    "userId": 5,
+    "body": "Thanks for the practical tips!",
+    "createdAt": "2024-01-20T16:00:00Z"
+  },
+  {
+    "id": 5,
+    "postId": 3,
+    "userId": 6,
+    "body": "Healthy eating is a challenge for me, these help.",
+    "createdAt": "2024-01-25T10:00:00Z"
+  },
+  {
+    "id": 6,
+    "postId": 3,
+    "userId": 7,
+    "body": "Meal prepping is a game changer.",
+    "createdAt": "2024-01-25T11:00:00Z"
+  },
+  {
+    "id": 7,
+    "postId": 4,
+    "userId": 8,
+    "body": "Digital marketing is evolving so fast!",
+    "createdAt": "2024-01-30T17:00:00Z"
+  },
+  {
+    "id": 8,
+    "postId": 4,
+    "userId": 9,
+    "body": "Great summary of the latest trends.",
+    "createdAt": "2024-01-30T18:00:00Z"
+  },
+  {
+    "id": 9,
+    "postId": 5,
+    "userId": 10,
+    "body": "Mindfulness has helped me a lot.",
+    "createdAt": "2024-02-05T12:00:00Z"
+  },
+  {
+    "id": 10,
+    "postId": 5,
+    "userId": 11,
+    "body": "Thanks for sharing these techniques.",
+    "createdAt": "2024-02-05T13:00:00Z"
+  },
+  {
+    "id": 11,
+    "postId": 6,
+    "userId": 12,
+    "body": "Remote work tips are always welcome!",
+    "createdAt": "2024-02-10T14:00:00Z"
+  },
+  {
+    "id": 12,
+    "postId": 6,
+    "userId": 13,
+    "body": "Discipline is key for productivity.",
+    "createdAt": "2024-02-10T15:00:00Z"
+  },
+  {
+    "id": 13,
+    "postId": 7,
+    "userId": 14,
+    "body": "Financial planning should be taught in schools.",
+    "createdAt": "2024-02-15T16:00:00Z"
+  },
+  {
+    "id": 14,
+    "postId": 7,
+    "userId": 15,
+    "body": "Great guide for young adults.",
+    "createdAt": "2024-02-15T17:00:00Z"
+  },
+  {
+    "id": 15,
+    "postId": 8,
+    "userId": 16,
+    "body": "Communication skills are so important.",
+    "createdAt": "2024-02-20T11:00:00Z"
+  },
+  {
+    "id": 16,
+    "postId": 8,
+    "userId": 17,
+    "body": "Thanks for the helpful advice!",
+    "createdAt": "2024-02-20T12:00:00Z"
+  },
+  {
+    "id": 17,
+    "postId": 9,
+    "userId": 18,
+    "body": "Organization makes a big difference.",
+    "createdAt": "2024-02-25T13:00:00Z"
+  },
+  {
+    "id": 18,
+    "postId": 9,
+    "userId": 19,
+    "body": "I need to try these strategies.",
+    "createdAt": "2024-02-25T14:00:00Z"
+  },
+  {
+    "id": 19,
+    "postId": 10,
+    "userId": 20,
+    "body": "Cybersecurity is a must for everyone.",
+    "createdAt": "2024-03-01T15:00:00Z"
+  },
+  {
+    "id": 20,
+    "postId": 10,
+    "userId": 21,
+    "body": "Thanks for the clear explanations.",
+    "createdAt": "2024-03-01T16:00:00Z"
+  },
+  {
+    "id": 21,
+    "postId": 11,
+    "userId": 22,
+    "body": "Problem solving is a valuable skill.",
+    "createdAt": "2024-03-05T10:00:00Z"
+  },
+  {
+    "id": 22,
+    "postId": 11,
+    "userId": 23,
+    "body": "Creativity helps in every field.",
+    "createdAt": "2024-03-05T11:00:00Z"
+  },
+  {
+    "id": 23,
+    "postId": 12,
+    "userId": 24,
+    "body": "Time management is my biggest challenge.",
+    "createdAt": "2024-03-10T12:00:00Z"
+  },
+  {
+    "id": 24,
+    "postId": 12,
+    "userId": 25,
+    "body": "Great strategies for productivity.",
+    "createdAt": "2024-03-10T13:00:00Z"
+  },
+  {
+    "id": 25,
+    "postId": 13,
+    "userId": 26,
+    "body": "Relationships are the key to happiness.",
+    "createdAt": "2024-03-15T14:00:00Z"
+  },
+  {
+    "id": 26,
+    "postId": 13,
+    "userId": 27,
+    "body": "Thanks for the advice!",
+    "createdAt": "2024-03-15T15:00:00Z"
+  },
+  {
+    "id": 27,
+    "postId": 14,
+    "userId": 28,
+    "body": "Personal development is a lifelong journey.",
+    "createdAt": "2024-03-20T16:00:00Z"
+  },
+  {
+    "id": 28,
+    "postId": 14,
+    "userId": 29,
+    "body": "Setting goals keeps me motivated.",
+    "createdAt": "2024-03-20T17:00:00Z"
+  },
+  {
+    "id": 29,
+    "postId": 15,
+    "userId": 30,
+    "body": "Stress management is so important.",
+    "createdAt": "2024-03-25T11:00:00Z"
+  },
+  {
+    "id": 30,
+    "postId": 15,
+    "userId": 1,
+    "body": "Thanks for sharing these techniques.",
+    "createdAt": "2024-03-25T12:00:00Z"
+  }
+]

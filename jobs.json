@@ -1,0 +1,960 @@
+[
+  {
+    "id": 1,
+    "title": "Senior Software Engineer",
+    "company": "TechVision Solutions",
+    "location": "Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "8000-12000",
+    "description": "We are looking for a Senior Software Engineer to join our development team and help build innovative software solutions.",
+    "requirements": [
+      "5+ years experience",
+      "JavaScript/React",
+      "Node.js",
+      "MongoDB",
+      "Git"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Flexible Hours",
+      "Remote Work",
+      "Professional Development"
+    ],
+    "postedDate": "2024-03-20",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "title": "Marketing Manager",
+    "company": "CreativeDesign Studio",
+    "location": "Zamalek, Cairo",
+    "type": "Full-time",
+    "salary": "6000-9000",
+    "description": "Lead marketing campaigns and strategies for our creative agency clients.",
+    "requirements": [
+      "3+ years experience",
+      "Digital Marketing",
+      "Social Media",
+      "Analytics",
+      "Leadership"
+    ],
+    "benefits": [
+      "Performance Bonus",
+      "Creative Environment",
+      "Health Insurance",
+      "Flexible Schedule"
+    ],
+    "postedDate": "2024-03-19",
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "title": "Data Analyst",
+    "company": "DataFlow Analytics",
+    "location": "Smart Village, Egypt",
+    "type": "Full-time",
+    "salary": "5000-8000",
+    "description": "Analyze data and provide insights to help businesses make informed decisions.",
+    "requirements": [
+      "2+ years experience",
+      "Python",
+      "SQL",
+      "Excel",
+      "Statistics"
+    ],
+    "benefits": [
+      "Learning Budget",
+      "Remote Work",
+      "Health Insurance",
+      "Career Growth"
+    ],
+    "postedDate": "2024-03-18",
+    "status": "active"
+  },
+  {
+    "id": 4,
+    "title": "Sales Representative",
+    "company": "FoodFresh Markets",
+    "location": "Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "3000-5000",
+    "description": "Build relationships with customers and promote our fresh food products.",
+    "requirements": [
+      "1+ year experience",
+      "Sales Skills",
+      "Communication",
+      "Customer Service"
+    ],
+    "benefits": [
+      "Commission",
+      "Health Insurance",
+      "Employee Discount",
+      "Training"
+    ],
+    "postedDate": "2024-03-17",
+    "status": "active"
+  },
+  {
+    "id": 5,
+    "title": "UX/UI Designer",
+    "company": "EduTech Innovations",
+    "location": "New Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "7000-10000",
+    "description": "Design user-friendly interfaces for our educational technology platform.",
+    "requirements": [
+      "3+ years experience",
+      "Figma",
+      "Adobe Creative Suite",
+      "User Research",
+      "Prototyping"
+    ],
+    "benefits": [
+      "Creative Freedom",
+      "Remote Work",
+      "Health Insurance",
+      "Latest Tools"
+    ],
+    "postedDate": "2024-03-16",
+    "status": "active"
+  },
+  {
+    "id": 6,
+    "title": "Project Manager",
+    "company": "BuildRight Construction",
+    "location": "Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "8000-12000",
+    "description": "Manage construction projects from planning to completion.",
+    "requirements": [
+      "5+ years experience",
+      "Construction Management",
+      "AutoCAD",
+      "Leadership",
+      "Budgeting"
+    ],
+    "benefits": [
+      "Performance Bonus",
+      "Health Insurance",
+      "Company Car",
+      "Professional Development"
+    ],
+    "postedDate": "2024-03-15",
+    "status": "active"
+  },
+  {
+    "id": 7,
+    "title": "Customer Service Representative",
+    "company": "FinanceFirst Bank",
+    "location": "Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "3500-5500",
+    "description": "Provide excellent customer service and support for banking operations.",
+    "requirements": [
+      "1+ year experience",
+      "Customer Service",
+      "Communication",
+      "Problem Solving"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Banking Benefits",
+      "Training",
+      "Career Growth"
+    ],
+    "postedDate": "2024-03-14",
+    "status": "active"
+  },
+  {
+    "id": 8,
+    "title": "Cybersecurity Specialist",
+    "company": "SecureNet Systems",
+    "location": "Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "9000-14000",
+    "description": "Protect our systems and data from cyber threats and vulnerabilities.",
+    "requirements": [
+      "4+ years experience",
+      "Network Security",
+      "Penetration Testing",
+      "Security Tools",
+      "Certifications"
+    ],
+    "benefits": [
+      "High Salary",
+      "Health Insurance",
+      "Latest Technology",
+      "Professional Development"
+    ],
+    "postedDate": "2024-03-13",
+    "status": "active"
+  },
+  {
+    "id": 9,
+    "title": "Content Writer",
+    "company": "DigitalMarketing Pro",
+    "location": "Cairo, Egypt",
+    "type": "Part-time",
+    "salary": "2000-4000",
+    "description": "Create engaging content for websites, blogs, and social media platforms.",
+    "requirements": [
+      "2+ years experience",
+      "Content Writing",
+      "SEO",
+      "Social Media",
+      "Creativity"
+    ],
+    "benefits": [
+      "Flexible Hours",
+      "Remote Work",
+      "Creative Freedom",
+      "Portfolio Building"
+    ],
+    "postedDate": "2024-03-12",
+    "status": "active"
+  },
+  {
+    "id": 10,
+    "title": "Logistics Coordinator",
+    "company": "LogiTech Transport",
+    "location": "Port Said, Egypt",
+    "type": "Full-time",
+    "salary": "4500-7000",
+    "description": "Coordinate shipping and logistics operations for our transportation company.",
+    "requirements": [
+      "2+ years experience",
+      "Logistics",
+      "Supply Chain",
+      "Coordination",
+      "Problem Solving"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Transportation Allowance",
+      "Performance Bonus",
+      "Training"
+    ],
+    "postedDate": "2024-03-11",
+    "status": "active"
+  },
+  {
+    "id": 11,
+    "title": "Medical Research Assistant",
+    "company": "MediCare Pharmaceuticals",
+    "location": "Giza, Egypt",
+    "type": "Full-time",
+    "salary": "6000-9000",
+    "description": "Assist in medical research and clinical trials for pharmaceutical development.",
+    "requirements": [
+      "3+ years experience",
+      "Medical Research",
+      "Clinical Trials",
+      "Data Analysis",
+      "Medical Degree"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Research Opportunities",
+      "Professional Development",
+      "Competitive Salary"
+    ],
+    "postedDate": "2024-03-10",
+    "status": "active"
+  },
+  {
+    "id": 12,
+    "title": "Investment Analyst",
+    "company": "InvestPro Capital",
+    "location": "Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "8000-12000",
+    "description": "Analyze investment opportunities and provide financial recommendations.",
+    "requirements": [
+      "4+ years experience",
+      "Financial Analysis",
+      "Investment Banking",
+      "Excel",
+      "CFA Preferred"
+    ],
+    "benefits": [
+      "High Salary",
+      "Performance Bonus",
+      "Health Insurance",
+      "Professional Development"
+    ],
+    "postedDate": "2024-03-09",
+    "status": "active"
+  },
+  {
+    "id": 13,
+    "title": "Tour Guide",
+    "company": "TourismPlus Agency",
+    "location": "Luxor, Egypt",
+    "type": "Seasonal",
+    "salary": "3000-6000",
+    "description": "Lead cultural tours and provide historical information to tourists.",
+    "requirements": [
+      "2+ years experience",
+      "Tourism",
+      "History Knowledge",
+      "Languages",
+      "Customer Service"
+    ],
+    "benefits": [
+      "Tips",
+      "Travel Opportunities",
+      "Flexible Schedule",
+      "Cultural Experience"
+    ],
+    "postedDate": "2024-03-08",
+    "status": "active"
+  },
+  {
+    "id": 14,
+    "title": "Cloud Engineer",
+    "company": "CloudTech Services",
+    "location": "Smart Village, Egypt",
+    "type": "Full-time",
+    "salary": "9000-14000",
+    "description": "Design and maintain cloud infrastructure and platform services.",
+    "requirements": [
+      "4+ years experience",
+      "AWS/Azure",
+      "Docker",
+      "Kubernetes",
+      "DevOps"
+    ],
+    "benefits": [
+      "High Salary",
+      "Remote Work",
+      "Latest Technology",
+      "Professional Development"
+    ],
+    "postedDate": "2024-03-07",
+    "status": "active"
+  },
+  {
+    "id": 15,
+    "title": "Legal Assistant",
+    "company": "LegalAdvice Partners",
+    "location": "Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "4000-7000",
+    "description": "Support lawyers with legal research, document preparation, and case management.",
+    "requirements": [
+      "2+ years experience",
+      "Legal Research",
+      "Documentation",
+      "Organization",
+      "Law Degree"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Professional Development",
+      "Stable Environment",
+      "Learning Opportunities"
+    ],
+    "postedDate": "2024-03-06",
+    "status": "active"
+  },
+  {
+    "id": 16,
+    "title": "Automotive Engineer",
+    "company": "AutoTech Motors",
+    "location": "10th Ramadan City, Egypt",
+    "type": "Full-time",
+    "salary": "8000-12000",
+    "description": "Design and develop electric and hybrid vehicle systems.",
+    "requirements": [
+      "5+ years experience",
+      "Automotive Engineering",
+      "Electric Vehicles",
+      "CAD",
+      "Engineering Degree"
+    ],
+    "benefits": [
+      "High Salary",
+      "Innovation",
+      "Health Insurance",
+      "Professional Development"
+    ],
+    "postedDate": "2024-03-05",
+    "status": "active"
+  },
+  {
+    "id": 17,
+    "title": "Video Editor",
+    "company": "MediaWorks Production",
+    "location": "Cairo, Egypt",
+    "type": "Freelance",
+    "salary": "4000-8000",
+    "description": "Edit and produce high-quality video content for television and digital platforms.",
+    "requirements": [
+      "3+ years experience",
+      "Adobe Premiere",
+      "After Effects",
+      "Video Editing",
+      "Creativity"
+    ],
+    "benefits": [
+      "Flexible Hours",
+      "Creative Freedom",
+      "Portfolio Building",
+      "Remote Work"
+    ],
+    "postedDate": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": 18,
+    "title": "Agricultural Engineer",
+    "company": "AgriTech Solutions",
+    "location": "Tanta, Egypt",
+    "type": "Full-time",
+    "salary": "6000-9000",
+    "description": "Develop smart farming solutions and agricultural technology systems.",
+    "requirements": [
+      "3+ years experience",
+      "Agricultural Engineering",
+      "IoT",
+      "Precision Agriculture",
+      "Engineering Degree"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Innovation",
+      "Field Work",
+      "Professional Development"
+    ],
+    "postedDate": "2024-03-03",
+    "status": "active"
+  },
+  {
+    "id": 19,
+    "title": "Property Manager",
+    "company": "RealEstate Partners",
+    "location": "New Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "7000-10000",
+    "description": "Manage residential and commercial properties, handle tenant relations and maintenance.",
+    "requirements": [
+      "4+ years experience",
+      "Property Management",
+      "Customer Service",
+      "Maintenance",
+      "Organization"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Performance Bonus",
+      "Company Car",
+      "Professional Development"
+    ],
+    "postedDate": "2024-03-02",
+    "status": "active"
+  },
+  {
+    "id": 20,
+    "title": "Business Consultant",
+    "company": "ConsultPro Advisory",
+    "location": "Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "10000-15000",
+    "description": "Provide strategic business advice and help optimize operations for clients.",
+    "requirements": [
+      "6+ years experience",
+      "Business Strategy",
+      "Operations",
+      "Analytics",
+      "MBA Preferred"
+    ],
+    "benefits": [
+      "High Salary",
+      "Performance Bonus",
+      "Travel",
+      "Professional Development"
+    ],
+    "postedDate": "2024-03-01",
+    "status": "active"
+  },
+  {
+    "id": 21,
+    "title": "Fashion Designer",
+    "company": "FashionForward Design",
+    "location": "Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "5000-8000",
+    "description": "Create contemporary clothing designs and oversee production processes.",
+    "requirements": [
+      "3+ years experience",
+      "Fashion Design",
+      "Pattern Making",
+      "Textiles",
+      "Creativity"
+    ],
+    "benefits": [
+      "Creative Freedom",
+      "Health Insurance",
+      "Fashion Shows",
+      "Professional Development"
+    ],
+    "postedDate": "2024-02-29",
+    "status": "active"
+  },
+  {
+    "id": 22,
+    "title": "Quality Control Specialist",
+    "company": "SportsTech Equipment",
+    "location": "Suez, Egypt",
+    "type": "Full-time",
+    "salary": "4000-7000",
+    "description": "Ensure quality standards for sports equipment manufacturing.",
+    "requirements": [
+      "2+ years experience",
+      "Quality Control",
+      "Manufacturing",
+      "Testing",
+      "Attention to Detail"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Performance Bonus",
+      "Training",
+      "Stable Environment"
+    ],
+    "postedDate": "2024-02-28",
+    "status": "active"
+  },
+  {
+    "id": 23,
+    "title": "Training Coordinator",
+    "company": "EduConsult Training",
+    "location": "Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "4500-7000",
+    "description": "Coordinate training programs and professional development initiatives.",
+    "requirements": [
+      "3+ years experience",
+      "Training",
+      "Coordination",
+      "Communication",
+      "Organization"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Learning Opportunities",
+      "Flexible Schedule",
+      "Professional Development"
+    ],
+    "postedDate": "2024-02-27",
+    "status": "active"
+  },
+  {
+    "id": 24,
+    "title": "Biotechnology Researcher",
+    "company": "BioTech Research",
+    "location": "New Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "7000-11000",
+    "description": "Conduct research in biotechnology and develop innovative medical solutions.",
+    "requirements": [
+      "4+ years experience",
+      "Biotechnology",
+      "Research",
+      "Laboratory Skills",
+      "PhD Preferred"
+    ],
+    "benefits": [
+      "High Salary",
+      "Research Opportunities",
+      "Health Insurance",
+      "Professional Development"
+    ],
+    "postedDate": "2024-02-26",
+    "status": "active"
+  },
+  {
+    "id": 25,
+    "title": "SEO Specialist",
+    "company": "DigitalMarketing Pro",
+    "location": "Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "5000-8000",
+    "description": "Optimize websites for search engines and improve online visibility.",
+    "requirements": [
+      "3+ years experience",
+      "SEO",
+      "Google Analytics",
+      "Content Optimization",
+      "Digital Marketing"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Remote Work",
+      "Performance Bonus",
+      "Professional Development"
+    ],
+    "postedDate": "2024-02-25",
+    "status": "active"
+  },
+  {
+    "id": 26,
+    "title": "Innovation Researcher",
+    "company": "InnovationLabs Tech",
+    "location": "Smart Village, Egypt",
+    "type": "Full-time",
+    "salary": "8000-12000",
+    "description": "Research and develop cutting-edge technology solutions and prototypes.",
+    "requirements": [
+      "5+ years experience",
+      "Research",
+      "Innovation",
+      "Prototyping",
+      "Technology"
+    ],
+    "benefits": [
+      "High Salary",
+      "Innovation",
+      "Latest Technology",
+      "Professional Development"
+    ],
+    "postedDate": "2024-02-24",
+    "status": "active"
+  },
+  {
+    "id": 27,
+    "title": "Software Tester",
+    "company": "QualityAssurance Corp",
+    "location": "Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "5000-8000",
+    "description": "Test software applications and ensure quality standards are met.",
+    "requirements": [
+      "2+ years experience",
+      "Software Testing",
+      "QA",
+      "Bug Tracking",
+      "Attention to Detail"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Performance Bonus",
+      "Training",
+      "Career Growth"
+    ],
+    "postedDate": "2024-02-23",
+    "status": "active"
+  },
+  {
+    "id": 28,
+    "title": "Robotics Engineer",
+    "company": "FutureTech Robotics",
+    "location": "10th Ramadan City, Egypt",
+    "type": "Full-time",
+    "salary": "9000-14000",
+    "description": "Design and develop robotics systems for industrial automation.",
+    "requirements": [
+      "5+ years experience",
+      "Robotics",
+      "Automation",
+      "Programming",
+      "Engineering Degree"
+    ],
+    "benefits": [
+      "High Salary",
+      "Innovation",
+      "Health Insurance",
+      "Professional Development"
+    ],
+    "postedDate": "2024-02-22",
+    "status": "active"
+  },
+  {
+    "id": 29,
+    "title": "Financial Advisor",
+    "company": "FinanceFirst Bank",
+    "location": "Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "6000-10000",
+    "description": "Provide financial advice and investment planning services to clients.",
+    "requirements": [
+      "4+ years experience",
+      "Financial Planning",
+      "Investment",
+      "Client Relations",
+      "Certifications"
+    ],
+    "benefits": [
+      "Commission",
+      "Health Insurance",
+      "Performance Bonus",
+      "Professional Development"
+    ],
+    "postedDate": "2024-02-21",
+    "status": "active"
+  },
+  {
+    "id": 30,
+    "title": "Healthcare Administrator",
+    "company": "HealthTech Solutions",
+    "location": "New Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "7000-11000",
+    "description": "Manage healthcare operations and coordinate medical services.",
+    "requirements": [
+      "4+ years experience",
+      "Healthcare Administration",
+      "Management",
+      "Organization",
+      "Healthcare Knowledge"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Performance Bonus",
+      "Stable Environment",
+      "Professional Development"
+    ],
+    "postedDate": "2024-02-20",
+    "status": "active"
+  },
+  {
+    "id": 31,
+    "title": "Supply Chain Manager",
+    "company": "EcoBuild Materials",
+    "location": "6th October City, Egypt",
+    "type": "Full-time",
+    "salary": "8000-12000",
+    "description": "Manage supply chain operations and optimize material sourcing.",
+    "requirements": [
+      "5+ years experience",
+      "Supply Chain",
+      "Logistics",
+      "Management",
+      "Analytics"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Performance Bonus",
+      "Company Car",
+      "Professional Development"
+    ],
+    "postedDate": "2024-02-19",
+    "status": "active"
+  },
+  {
+    "id": 32,
+    "title": "Environmental Engineer",
+    "company": "Green Energy Corp",
+    "location": "Alexandria, Egypt",
+    "type": "Full-time",
+    "salary": "7000-11000",
+    "description": "Develop sustainable energy solutions and environmental projects.",
+    "requirements": [
+      "4+ years experience",
+      "Environmental Engineering",
+      "Renewable Energy",
+      "Sustainability",
+      "Engineering Degree"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Environmental Impact",
+      "Professional Development",
+      "Innovation"
+    ],
+    "postedDate": "2024-02-18",
+    "status": "active"
+  },
+  {
+    "id": 33,
+    "title": "Product Manager",
+    "company": "TechVision Solutions",
+    "location": "Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "10000-15000",
+    "description": "Lead product development and manage software product lifecycle.",
+    "requirements": [
+      "5+ years experience",
+      "Product Management",
+      "Agile",
+      "Leadership",
+      "Technical Background"
+    ],
+    "benefits": [
+      "High Salary",
+      "Performance Bonus",
+      "Health Insurance",
+      "Professional Development"
+    ],
+    "postedDate": "2024-02-17",
+    "status": "active"
+  },
+  {
+    "id": 34,
+    "title": "Human Resources Specialist",
+    "company": "ConsultPro Advisory",
+    "location": "Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "5000-8000",
+    "description": "Manage HR operations including recruitment, employee relations, and benefits.",
+    "requirements": [
+      "3+ years experience",
+      "HR Management",
+      "Recruitment",
+      "Employee Relations",
+      "HR Degree"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Performance Bonus",
+      "Professional Development",
+      "Stable Environment"
+    ],
+    "postedDate": "2024-02-16",
+    "status": "active"
+  },
+  {
+    "id": 35,
+    "title": "Operations Manager",
+    "company": "LogiTech Transport",
+    "location": "Port Said, Egypt",
+    "type": "Full-time",
+    "salary": "8000-12000",
+    "description": "Manage daily operations and optimize logistics processes.",
+    "requirements": [
+      "5+ years experience",
+      "Operations Management",
+      "Logistics",
+      "Leadership",
+      "Problem Solving"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Performance Bonus",
+      "Company Car",
+      "Professional Development"
+    ],
+    "postedDate": "2024-02-15",
+    "status": "active"
+  },
+  {
+    "id": 36,
+    "title": "Digital Marketing Specialist",
+    "company": "CreativeDesign Studio",
+    "location": "Zamalek, Cairo",
+    "type": "Full-time",
+    "salary": "5000-8000",
+    "description": "Develop and execute digital marketing campaigns for clients.",
+    "requirements": [
+      "3+ years experience",
+      "Digital Marketing",
+      "Social Media",
+      "Analytics",
+      "Creativity"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Creative Environment",
+      "Performance Bonus",
+      "Professional Development"
+    ],
+    "postedDate": "2024-02-14",
+    "status": "active"
+  },
+  {
+    "id": 37,
+    "title": "Research Analyst",
+    "company": "DataFlow Analytics",
+    "location": "Smart Village, Egypt",
+    "type": "Full-time",
+    "salary": "6000-9000",
+    "description": "Conduct market research and provide analytical insights.",
+    "requirements": [
+      "3+ years experience",
+      "Market Research",
+      "Data Analysis",
+      "Statistics",
+      "Research Skills"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Learning Budget",
+      "Remote Work",
+      "Professional Development"
+    ],
+    "postedDate": "2024-02-13",
+    "status": "active"
+  },
+  {
+    "id": 38,
+    "title": "Customer Success Manager",
+    "company": "EduTech Innovations",
+    "location": "New Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "6000-9000",
+    "description": "Ensure customer satisfaction and manage client relationships.",
+    "requirements": [
+      "3+ years experience",
+      "Customer Success",
+      "Client Relations",
+      "Communication",
+      "Problem Solving"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Performance Bonus",
+      "Remote Work",
+      "Professional Development"
+    ],
+    "postedDate": "2024-02-12",
+    "status": "active"
+  },
+  {
+    "id": 39,
+    "title": "Business Development Manager",
+    "company": "RealEstate Partners",
+    "location": "New Cairo, Egypt",
+    "type": "Full-time",
+    "salary": "8000-12000",
+    "description": "Develop new business opportunities and partnerships in real estate.",
+    "requirements": [
+      "5+ years experience",
+      "Business Development",
+      "Sales",
+      "Real Estate",
+      "Networking"
+    ],
+    "benefits": [
+      "High Salary",
+      "Commission",
+      "Health Insurance",
+      "Professional Development"
+    ],
+    "postedDate": "2024-02-11",
+    "status": "active"
+  },
+  {
+    "id": 40,
+    "title": "Technical Support Engineer",
+    "company": "CloudTech Services",
+    "location": "Smart Village, Egypt",
+    "type": "Full-time",
+    "salary": "5000-8000",
+    "description": "Provide technical support and troubleshooting for cloud services.",
+    "requirements": [
+      "2+ years experience",
+      "Technical Support",
+      "Cloud Services",
+      "Problem Solving",
+      "Communication"
+    ],
+    "benefits": [
+      "Health Insurance",
+      "Remote Work",
+      "Training",
+      "Career Growth"
+    ],
+    "postedDate": "2024-02-10",
+    "status": "active"
+  }
+]
