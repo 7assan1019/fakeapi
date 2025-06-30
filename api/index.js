@@ -33,8 +33,25 @@ server.get('/health', (req, res) => {
   });
 });
 
-// Mount json-server router (Vercel will handle the /api prefix)
+// Mount json-server router
 server.use('/', router);
 
-// Export the serverless function
-module.exports = server; 
+// Export for Vercel serverless function
+module.exports = (req, res) => {
+  // Handle CORS preflight
+  if (req.method === 'OPTIONS') {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    res.status(200).end();
+    return;
+  }
+
+  // Set CORS headers
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+
+  // Handle the request
+  server(req, res);
+}; 
