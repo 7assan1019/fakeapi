@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "name": "Premium Wireless Headphones",
+    "description": "High-quality wireless headphones with noise cancellation and 30-hour battery life",
+    "price": 299.99,
+    "categoryId": 1,
+    "brand": "TechSound",
+    "stock": 45,
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.7
+  },
+  {
+    "id": 2,
+    "name": "Smart Fitness Watch",
+    "description": "Advanced fitness tracking with heart rate monitor and GPS",
+    "price": 199.99,
+    "categoryId": 4,
+    "brand": "FitTech",
+    "stock": 32,
+    "images": [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1544117519-31a4b719223d?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.5
+  },
+  {
+    "id": 3,
+    "name": "Organic Cotton T-Shirt",
+    "description": "Comfortable and sustainable cotton t-shirt in various colors",
+    "price": 24.99,
+    "categoryId": 2,
+    "brand": "EcoWear",
+    "stock": 120,
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.3
+  },
+  {
+    "id": 4,
+    "name": "Professional Coffee Maker",
+    "description": "Automatic coffee maker with programmable settings and thermal carafe",
+    "price": 89.99,
+    "categoryId": 3,
+    "brand": "BrewMaster",
+    "stock": 28,
+    "images": [
+      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.6
+  },
+  {
+    "id": 5,
+    "name": "Wireless Bluetooth Speaker",
+    "description": "Portable speaker with 360-degree sound and waterproof design",
+    "price": 79.99,
+    "categoryId": 1,
+    "brand": "SoundWave",
+    "stock": 67,
+    "images": [
+      "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.4
+  },
+  {
+    "id": 6,
+    "name": "Yoga Mat Premium",
+    "description": "Non-slip yoga mat with alignment lines and carrying strap",
+    "price": 34.99,
+    "categoryId": 4,
+    "brand": "ZenFit",
+    "stock": 89,
+    "images": [
+      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.8
+  },
+  {
+    "id": 7,
+    "name": "Natural Face Cream",
+    "description": "Hydrating face cream with organic ingredients and SPF protection",
+    "price": 29.99,
+    "categoryId": 7,
+    "brand": "PureGlow",
+    "stock": 156,
+    "images": [
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.2
+  },
+  {
+    "id": 8,
+    "name": "Educational Building Blocks",
+    "description": "STEM learning blocks for developing creativity and problem-solving skills",
+    "price": 49.99,
+    "categoryId": 8,
+    "brand": "LearnBuild",
+    "stock": 43,
+    "images": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.9
+  },
+  {
+    "id": 9,
+    "name": "Car Phone Mount",
+    "description": "Universal phone holder for dashboard with secure grip",
+    "price": 19.99,
+    "categoryId": 6,
+    "brand": "AutoGrip",
+    "stock": 234,
+    "images": [
+      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.1
+  },
+  {
+    "id": 10,
+    "name": "Garden Tool Set",
+    "description": "Complete set of essential gardening tools with storage case",
+    "price": 64.99,
+    "categoryId": 3,
+    "brand": "GreenThumb",
+    "stock": 78,
+    "images": [
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.7
+  },
+  {
+    "id": 11,
+    "name": "Wireless Charging Pad",
+    "description": "Fast wireless charging pad compatible with all Qi-enabled devices",
+    "price": 39.99,
+    "categoryId": 1,
+    "brand": "PowerFlow",
+    "stock": 112,
+    "images": [
+      "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.3
+  },
+  {
+    "id": 12,
+    "name": "Running Shoes",
+    "description": "Lightweight running shoes with superior cushioning and breathability",
+    "price": 129.99,
+    "categoryId": 4,
+    "brand": "RunFast",
+    "stock": 56,
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.6
+  },
+  {
+    "id": 13,
+    "name": "Smart Home Hub",
+    "description": "Central control hub for all your smart home devices",
+    "price": 149.99,
+    "categoryId": 1,
+    "brand": "HomeSmart",
+    "stock": 34,
+    "images": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.4
+  },
+  {
+    "id": 14,
+    "name": "Organic Tea Collection",
+    "description": "Assorted organic teas with health benefits and natural flavors",
+    "price": 19.99,
+    "categoryId": 7,
+    "brand": "TeaPure",
+    "stock": 89,
+    "images": [
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.5
+  },
+  {
+    "id": 15,
+    "name": "Puzzle Set",
+    "description": "1000-piece jigsaw puzzle with beautiful landscape design",
+    "price": 24.99,
+    "categoryId": 8,
+    "brand": "MindGames",
+    "stock": 67,
+    "images": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.2
+  },
+  {
+    "id": 16,
+    "name": "Car Air Freshener",
+    "description": "Long-lasting natural car air freshener with multiple scents",
+    "price": 12.99,
+    "categoryId": 6,
+    "brand": "FreshRide",
+    "stock": 189,
+    "images": [
+      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4
+  },
+  {
+    "id": 17,
+    "name": "Kitchen Knife Set",
+    "description": "Professional-grade knife set with wooden storage block",
+    "price": 89.99,
+    "categoryId": 3,
+    "brand": "ChefPro",
+    "stock": 45,
+    "images": [
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.8
+  },
+  {
+    "id": 18,
+    "name": "Tablet Stand",
+    "description": "Adjustable tablet stand for comfortable viewing and typing",
+    "price": 29.99,
+    "categoryId": 1,
+    "brand": "TabletPro",
+    "stock": 123,
+    "images": [
+      "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.3
+  },
+  {
+    "id": 19,
+    "name": "Dumbbell Set",
+    "description": "Adjustable dumbbell set for home workouts and strength training",
+    "price": 199.99,
+    "categoryId": 4,
+    "brand": "PowerFit",
+    "stock": 23,
+    "images": [
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.7
+  },
+  {
+    "id": 20,
+    "name": "Natural Shampoo",
+    "description": "Sulfate-free shampoo with organic ingredients for all hair types",
+    "price": 18.99,
+    "categoryId": 7,
+    "brand": "HairPure",
+    "stock": 234,
+    "images": [
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.4
+  },
+  {
+    "id": 21,
+    "name": "Board Game Collection",
+    "description": "Family-friendly board games for all ages and skill levels",
+    "price": 34.99,
+    "categoryId": 8,
+    "brand": "FamilyFun",
+    "stock": 78,
+    "images": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.6
+  },
+  {
+    "id": 22,
+    "name": "Car Wash Kit",
+    "description": "Complete car washing kit with microfiber cloths and eco-friendly soap",
+    "price": 44.99,
+    "categoryId": 6,
+    "brand": "CleanRide",
+    "stock": 67,
+    "images": [
+      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.5
+  },
+  {
+    "id": 23,
+    "name": "Smart LED Bulbs",
+    "description": "WiFi-enabled LED bulbs with color control and scheduling",
+    "price": 59.99,
+    "categoryId": 1,
+    "brand": "LightSmart",
+    "stock": 89,
+    "images": [
+      "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.3
+  },
+  {
+    "id": 24,
+    "name": "Yoga Block Set",
+    "description": "High-density foam yoga blocks for support and alignment",
+    "price": 19.99,
+    "categoryId": 4,
+    "brand": "ZenFit",
+    "stock": 156,
+    "images": [
+      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.1
+  },
+  {
+    "id": 25,
+    "name": "Natural Soap Bar",
+    "description": "Handcrafted natural soap with essential oils and moisturizing properties",
+    "price": 8.99,
+    "categoryId": 7,
+    "brand": "PureGlow",
+    "stock": 345,
+    "images": [
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.7
+  },
+  {
+    "id": 26,
+    "name": "Educational Science Kit",
+    "description": "Complete science experiment kit for young learners",
+    "price": 39.99,
+    "categoryId": 8,
+    "brand": "LearnBuild",
+    "stock": 45,
+    "images": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.8
+  },
+  {
+    "id": 27,
+    "name": "Car Floor Mats",
+    "description": "Custom-fit car floor mats with anti-slip backing",
+    "price": 69.99,
+    "categoryId": 6,
+    "brand": "AutoGrip",
+    "stock": 89,
+    "images": [
+      "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.4
+  },
+  {
+    "id": 28,
+    "name": "Smart Thermostat",
+    "description": "Programmable smart thermostat with energy-saving features",
+    "price": 129.99,
+    "categoryId": 1,
+    "brand": "HomeSmart",
+    "stock": 34,
+    "images": [
+      "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.6
+  },
+  {
+    "id": 29,
+    "name": "Resistance Bands Set",
+    "description": "Complete set of resistance bands for strength training and rehabilitation",
+    "price": 24.99,
+    "categoryId": 4,
+    "brand": "PowerFit",
+    "stock": 178,
+    "images": [
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.5
+  },
+  {
+    "id": 30,
+    "name": "Natural Toothpaste",
+    "description": "Fluoride-free natural toothpaste with mint and tea tree oil",
+    "price": 12.99,
+    "categoryId": 7,
+    "brand": "HairPure",
+    "stock": 267,
+    "images": [
+      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=400&h=300&fit=crop"
+    ],
+    "avgRating": 4.3
+  }
+]
