@@ -1,16 +1,15 @@
 {
   "version": 2,
   "name": "fake-api",
+  "functions": {
+    "api/users.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/public/api/$1.json",
-      "headers": {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization"
-      }
+      "src": "/api/users",
+      "dest": "/api/users.js"
     },
     {
       "src": "/(.*)",
