@@ -453,25 +453,28 @@
                 <div class="code-block">
                     <button class="copy-btn" onclick="copyToClipboard('quickRequest')">Copy</button>
                     <h4>Request</h4>
-                    <pre id="quickRequest">fetch('https://fakeapi-47c7.vercel.app/api/users/1')
+                    <pre id="quickRequest">fetch('https://fakeapi-47c7.vercel.app/api/users')
   .then(response => response.json())
-  .then(json => console.log(json))</pre>
+  .then(json => console.log(json[0]))</pre>
                 </div>
                 <div class="code-block">
                     <button class="copy-btn" onclick="copyToClipboard('quickResponse')">Copy</button>
                     <h4>Response</h4>
-                    <pre id="quickResponse">{
-  "id": 1,
-  "name": "Ahmed Hassan",
-  "username": "ahmed_hassan",
-  "email": "ahmed.hassan@email.com",
-  "avatar": "https://images.unsplash.com/...",
-  "address": {
-    "street": "123 Main Street",
-    "city": "Cairo",
-    "zipcode": "11511"
-  }
-}</pre>
+                    <pre id="quickResponse">[
+  {
+    "id": 1,
+    "name": "Ahmed Hassan",
+    "username": "ahmed_hassan",
+    "email": "ahmed.hassan@email.com",
+    "avatar": "https://images.unsplash.com/...",
+    "address": {
+      "street": "123 Main Street",
+      "city": "Cairo",
+      "zipcode": "11511"
+    }
+  },
+  // ... more users
+]</pre>
                 </div>
             </div>
         </div>
@@ -547,83 +550,108 @@
 
         <!-- Advanced Features -->
         <div class="advanced-features">
-            <h2>⚡ Advanced Features</h2>
-            <p style="text-align: center; color: #666; margin-bottom: 30px;">Discover the power of our API with these advanced capabilities</p>
+            <h2>⚡ Client-Side Features</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 30px;">This is a static API that returns complete datasets. Use JavaScript to filter, sort, and paginate the data on the client-side.</p>
             
             <div class="feature-grid">
                 <div class="feature-card">
-                    <h4><i class="fas fa-filter"></i> Filtering</h4>
-                    <p>Filter data by any field with various operators</p>
+                    <h4><i class="fas fa-filter"></i> Client-Side Filtering</h4>
+                    <p>Filter data using JavaScript after fetching the complete dataset</p>
                     <div class="code-block">
                         <button class="copy-btn" onclick="copyToClipboard('filterExample')">Copy</button>
-                        <pre id="filterExample">GET https://fakeapi-47c7.vercel.app/api/hotels?stars=5&price_lte=200
-
-GET https://fakeapi-47c7.vercel.app/api/products?rating_gte=4.5
-
-GET https://fakeapi-47c7.vercel.app/api/users?address.city=Cairo</pre>
+                        <pre id="filterExample">// Get all hotels, then filter
+fetch('/api/hotels')
+  .then(response => response.json())
+  .then(hotels => {
+    const fiveStarHotels = hotels.filter(hotel => hotel.stars === 5);
+    const affordableHotels = hotels.filter(hotel => hotel.price <= 200);
+  })</pre>
                     </div>
                 </div>
 
                 <div class="feature-card">
-                    <h4><i class="fas fa-sort"></i> Sorting</h4>
-                    <p>Sort results by any field in ascending or descending order</p>
+                    <h4><i class="fas fa-sort"></i> Client-Side Sorting</h4>
+                    <p>Sort results using JavaScript's sort() method</p>
                     <div class="code-block">
                         <button class="copy-btn" onclick="copyToClipboard('sortExample')">Copy</button>
-                        <pre id="sortExample">GET https://fakeapi-47c7.vercel.app/api/products?_sort=price&_order=asc
-
-GET https://fakeapi-47c7.vercel.app/api/jobs?_sort=salary&_order=desc
-
-GET https://fakeapi-47c7.vercel.app/api/hotels?_sort=rating&_order=desc</pre>
+                        <pre id="sortExample">// Get all products, then sort
+fetch('/api/products')
+  .then(response => response.json())
+  .then(products => {
+    const sortedByPrice = products.sort((a, b) => a.price - b.price);
+    const sortedByRating = products.sort((a, b) => b.rating - a.rating);
+  })</pre>
                     </div>
                 </div>
 
                 <div class="feature-card">
-                    <h4><i class="fas fa-search"></i> Search</h4>
-                    <p>Full-text search across all text fields</p>
+                    <h4><i class="fas fa-search"></i> Client-Side Search</h4>
+                    <p>Search through data using JavaScript after fetching</p>
                     <div class="code-block">
                         <button class="copy-btn" onclick="copyToClipboard('searchExample')">Copy</button>
-                        <pre id="searchExample">GET https://fakeapi-47c7.vercel.app/api/products?q=laptop
-
-GET https://fakeapi-47c7.vercel.app/api/hotels?q=resort
-
-GET https://fakeapi-47c7.vercel.app/api/jobs?q=developer</pre>
+                        <pre id="searchExample">// Get all products, then search
+fetch('/api/products')
+  .then(response => response.json())
+  .then(products => {
+    const searchTerm = 'laptop';
+    const results = products.filter(product => 
+      product.name.toLowerCase().includes(searchTerm)
+    );
+  })</pre>
                     </div>
                 </div>
 
                 <div class="feature-card">
-                    <h4><i class="fas fa-list-ol"></i> Pagination</h4>
-                    <p>Control the number of results and navigate pages</p>
+                    <h4><i class="fas fa-list-ol"></i> Client-Side Pagination</h4>
+                    <p>Implement pagination using JavaScript array methods</p>
                     <div class="code-block">
                         <button class="copy-btn" onclick="copyToClipboard('paginationExample')">Copy</button>
-                        <pre id="paginationExample">GET https://fakeapi-47c7.vercel.app/api/users?_page=1&_limit=10
-
-GET https://fakeapi-47c7.vercel.app/api/products?_start=20&_limit=5
-
-GET https://fakeapi-47c7.vercel.app/api/hotels?_page=2&_limit=15</pre>
+                        <pre id="paginationExample">// Get all users, then paginate
+fetch('/api/users')
+  .then(response => response.json())
+  .then(users => {
+    const page = 1;
+    const limit = 10;
+    const start = (page - 1) * limit;
+    const paginatedUsers = users.slice(start, start + limit);
+  })</pre>
                     </div>
                 </div>
 
                 <div class="feature-card">
-                    <h4><i class="fas fa-link"></i> Nested Routes</h4>
-                    <p>Access related data through nested endpoints</p>
+                    <h4><i class="fas fa-link"></i> Data Relationships</h4>
+                    <p>Combine data from multiple endpoints to create relationships</p>
                     <div class="code-block">
                         <button class="copy-btn" onclick="copyToClipboard('nestedExample')">Copy</button>
-                        <pre id="nestedExample">GET https://fakeapi-47c7.vercel.app/api/posts/1/comments
-
-GET https://fakeapi-47c7.vercel.app/api/users/1/posts
-
-GET https://fakeapi-47c7.vercel.app/api/products/1/reviews</pre>
+                        <pre id="nestedExample">// Get users and their posts
+Promise.all([
+  fetch('/api/users'),
+  fetch('/api/posts')
+]).then(responses => Promise.all(responses.map(r => r.json())))
+.then(([users, posts]) => {
+  const usersWithPosts = users.map(user => ({
+    ...user,
+    posts: posts.filter(post => post.userId === user.id)
+  }));
+})</pre>
                     </div>
                 </div>
 
                 <div class="feature-card">
-                    <h4><i class="fas fa-magic"></i> Complex Queries</h4>
-                    <p>Combine multiple features for powerful queries</p>
+                    <h4><i class="fas fa-magic"></i> Complex Operations</h4>
+                    <p>Combine multiple operations for powerful data manipulation</p>
                     <div class="code-block">
                         <button class="copy-btn" onclick="copyToClipboard('complexExample')">Copy</button>
-                        <pre id="complexExample">GET https://fakeapi-47c7.vercel.app/api/apartments?bedrooms_gte=2&price_lte=2000&_sort=price&_order=asc&_page=1&_limit=10
-
-GET https://fakeapi-47c7.vercel.app/api/hotels?stars=5&amenities_like=Pool&_sort=rating&_order=desc</pre>
+                        <pre id="complexExample">// Complex filtering, sorting, and pagination
+fetch('/api/apartments')
+  .then(response => response.json())
+  .then(apartments => {
+    const filtered = apartments.filter(apt => 
+      apt.bedrooms >= 2 && apt.price <= 2000
+    );
+    const sorted = filtered.sort((a, b) => a.price - b.price);
+    const paginated = sorted.slice(0, 10);
+  })</pre>
                     </div>
                 </div>
             </div>
