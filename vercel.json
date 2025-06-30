@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "name": "fake-api",
+  "functions": {
+    "api/users.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/users",
+      "dest": "/api/users.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1"
+    }
+  ]
+} 
