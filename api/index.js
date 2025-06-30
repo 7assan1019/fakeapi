@@ -11,7 +11,6 @@ const db = require('../db.json');
 const server = jsonServer.create();
 const router = jsonServer.router(db);
 const middlewares = jsonServer.defaults({
-  static: './public',
   logger: false
 });
 
@@ -34,8 +33,8 @@ server.get('/health', (req, res) => {
   });
 });
 
-// Mount json-server router under /api
-server.use('/api', router);
+// Mount json-server router (Vercel will handle the /api prefix)
+server.use('/', router);
 
 // Export the serverless function
 module.exports = server; 
