@@ -1,0 +1,582 @@
+[
+  {
+    "id": 1,
+    "name": "TechVision Web Development",
+    "category": "Technology",
+    "description": "Professional web development services including custom websites, e-commerce platforms, and web applications.",
+    "provider": "TechVision Solutions",
+    "price_range": "$$$",
+    "rating": 4.8,
+    "location": "Cairo",
+    "phone": "+20-2-1234-5678",
+    "email": "info@techvision.com",
+    "website": "www.techvision.com",
+    "features": [
+      "Custom Development",
+      "E-commerce",
+      "Mobile Responsive",
+      "SEO Optimization"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 2,
+    "name": "CreativeDesign Studio",
+    "category": "Design",
+    "description": "Creative design services including graphic design, branding, and marketing materials.",
+    "provider": "CreativeDesign Studio",
+    "price_range": "$$",
+    "rating": 4.6,
+    "location": "Alexandria",
+    "phone": "+20-3-2345-6789",
+    "email": "info@creativedesign.com",
+    "website": "www.creativedesign.com",
+    "features": [
+      "Graphic Design",
+      "Branding",
+      "Logo Design",
+      "Marketing Materials"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 3,
+    "name": "ConsultPro Advisory",
+    "category": "Consulting",
+    "description": "Business consulting services for strategy, operations, and growth optimization.",
+    "provider": "ConsultPro Advisory",
+    "price_range": "$$$$",
+    "rating": 4.7,
+    "location": "Cairo",
+    "phone": "+20-2-3456-7890",
+    "email": "info@consultpro.com",
+    "website": "www.consultpro.com",
+    "features": [
+      "Business Strategy",
+      "Operations",
+      "Growth Planning",
+      "Market Analysis"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 4,
+    "name": "LegalAdvice Partners",
+    "category": "Legal",
+    "description": "Comprehensive legal services including corporate law, contracts, and dispute resolution.",
+    "provider": "LegalAdvice Partners",
+    "price_range": "$$$",
+    "rating": 4.5,
+    "location": "Giza",
+    "phone": "+20-2-4567-8901",
+    "email": "info@legaladvice.com",
+    "website": "www.legaladvice.com",
+    "features": [
+      "Corporate Law",
+      "Contracts",
+      "Dispute Resolution",
+      "Legal Consultation"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 5,
+    "name": "EduConsult Training",
+    "category": "Education",
+    "description": "Professional training and development services for individuals and organizations.",
+    "provider": "EduConsult Training",
+    "price_range": "$$",
+    "rating": 4.4,
+    "location": "Luxor",
+    "phone": "+20-97-5678-9012",
+    "email": "info@educonsult.com",
+    "website": "www.educonsult.com",
+    "features": [
+      "Professional Training",
+      "Skill Development",
+      "Certification",
+      "Workshops"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 6,
+    "name": "HealthTech Solutions",
+    "category": "Healthcare",
+    "description": "Healthcare technology solutions including medical software and digital health platforms.",
+    "provider": "HealthTech Solutions",
+    "price_range": "$$$",
+    "rating": 4.6,
+    "location": "Aswan",
+    "phone": "+20-97-6789-0123",
+    "email": "info@healthtech.com",
+    "website": "www.healthtech.com",
+    "features": [
+      "Medical Software",
+      "Digital Health",
+      "Telemedicine",
+      "Health Analytics"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 7,
+    "name": "FinanceFirst Bank",
+    "category": "Finance",
+    "description": "Comprehensive banking and financial services for individuals and businesses.",
+    "provider": "FinanceFirst Bank",
+    "price_range": "$$",
+    "rating": 4.3,
+    "location": "Hurghada",
+    "phone": "+20-65-7890-1234",
+    "email": "info@financefirst.com",
+    "website": "www.financefirst.com",
+    "features": [
+      "Personal Banking",
+      "Business Banking",
+      "Investment Services",
+      "Online Banking"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 8,
+    "name": "TourismPlus Agency",
+    "category": "Tourism",
+    "description": "Travel and tourism services including tours, accommodations, and travel planning.",
+    "provider": "TourismPlus Agency",
+    "price_range": "$$",
+    "rating": 4.5,
+    "location": "Sharm El Sheikh",
+    "phone": "+20-69-8901-2345",
+    "email": "info@tourismplus.com",
+    "website": "www.tourismplus.com",
+    "features": [
+      "Tour Packages",
+      "Hotel Booking",
+      "Travel Planning",
+      "Guided Tours"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 9,
+    "name": "MediaWorks Production",
+    "category": "Media",
+    "description": "Professional media production services including video, photography, and content creation.",
+    "provider": "MediaWorks Production",
+    "price_range": "$$$",
+    "rating": 4.7,
+    "location": "Port Said",
+    "phone": "+20-66-9012-3456",
+    "email": "info@mediaworks.com",
+    "website": "www.mediaworks.com",
+    "features": [
+      "Video Production",
+      "Photography",
+      "Content Creation",
+      "Post-Production"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 10,
+    "name": "BuildRight Construction",
+    "category": "Construction",
+    "description": "Construction and renovation services for residential and commercial projects.",
+    "provider": "BuildRight Construction",
+    "price_range": "$$$",
+    "rating": 4.4,
+    "location": "Mansoura",
+    "phone": "+20-50-0123-4567",
+    "email": "info@buildright.com",
+    "website": "www.buildright.com",
+    "features": [
+      "Construction",
+      "Renovation",
+      "Project Management",
+      "Quality Control"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 11,
+    "name": "FoodFresh Markets",
+    "category": "Retail",
+    "description": "Fresh food delivery and grocery services with quality products and fast delivery.",
+    "provider": "FoodFresh Markets",
+    "price_range": "$$",
+    "rating": 4.5,
+    "location": "Tanta",
+    "phone": "+20-40-1234-5678",
+    "email": "info@foodfresh.com",
+    "website": "www.foodfresh.com",
+    "features": [
+      "Fresh Delivery",
+      "Grocery",
+      "Organic Products",
+      "Fast Delivery"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 12,
+    "name": "DataFlow Analytics",
+    "category": "Technology",
+    "description": "Data analytics and business intelligence services for data-driven decision making.",
+    "provider": "DataFlow Analytics",
+    "price_range": "$$$",
+    "rating": 4.6,
+    "location": "Zagazig",
+    "phone": "+20-55-2345-6789",
+    "email": "info@dataflow.com",
+    "website": "www.dataflow.com",
+    "features": [
+      "Data Analytics",
+      "Business Intelligence",
+      "Reporting",
+      "Predictive Analytics"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 13,
+    "name": "LogiTech Transport",
+    "category": "Transportation",
+    "description": "Logistics and transportation services for efficient supply chain management.",
+    "provider": "LogiTech Transport",
+    "price_range": "$$",
+    "rating": 4.3,
+    "location": "Benha",
+    "phone": "+20-13-3456-7890",
+    "email": "info@logitech.com",
+    "website": "www.logitech.com",
+    "features": [
+      "Freight Transport",
+      "Warehousing",
+      "Supply Chain",
+      "Tracking"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 14,
+    "name": "MediCare Pharmaceuticals",
+    "category": "Healthcare",
+    "description": "Pharmaceutical services including medication supply and healthcare products.",
+    "provider": "MediCare Pharmaceuticals",
+    "price_range": "$$",
+    "rating": 4.4,
+    "location": "Damanhur",
+    "phone": "+20-45-4567-8901",
+    "email": "info@medicare.com",
+    "website": "www.medicare.com",
+    "features": [
+      "Medication Supply",
+      "Healthcare Products",
+      "Consultation",
+      "Delivery"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 15,
+    "name": "Green Energy Corp",
+    "category": "Environment",
+    "description": "Renewable energy solutions and sustainable development services.",
+    "provider": "Green Energy Corp",
+    "price_range": "$$$",
+    "rating": 4.5,
+    "location": "Kafr El Sheikh",
+    "phone": "+20-47-5678-9012",
+    "email": "info@greenenergy.com",
+    "website": "www.greenenergy.com",
+    "features": [
+      "Solar Energy",
+      "Wind Power",
+      "Energy Efficiency",
+      "Sustainability"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 16,
+    "name": "AutoTech Motors",
+    "category": "Automotive",
+    "description": "Automotive services including sales, maintenance, and repair for all vehicle types.",
+    "provider": "AutoTech Motors",
+    "price_range": "$$",
+    "rating": 4.4,
+    "location": "Suez",
+    "phone": "+20-62-6789-0123",
+    "email": "info@autotech.com",
+    "website": "www.autotech.com",
+    "features": [
+      "Vehicle Sales",
+      "Maintenance",
+      "Repair",
+      "Parts Supply"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 17,
+    "name": "SportsTech Equipment",
+    "category": "Sports",
+    "description": "Sports equipment and fitness services for athletes and fitness enthusiasts.",
+    "provider": "SportsTech Equipment",
+    "price_range": "$$",
+    "rating": 4.3,
+    "location": "Ismailia",
+    "phone": "+20-64-7890-1234",
+    "email": "info@sportstech.com",
+    "website": "www.sportstech.com",
+    "features": [
+      "Sports Equipment",
+      "Fitness Training",
+      "Athletic Wear",
+      "Coaching"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 18,
+    "name": "EcoBuild Materials",
+    "category": "Construction",
+    "description": "Eco-friendly building materials and sustainable construction solutions.",
+    "provider": "EcoBuild Materials",
+    "price_range": "$$$",
+    "rating": 4.5,
+    "location": "New Cairo",
+    "phone": "+20-2-8901-2345",
+    "email": "info@ecobuild.com",
+    "website": "www.ecobuild.com",
+    "features": [
+      "Eco Materials",
+      "Sustainable Building",
+      "Green Construction",
+      "Recycling"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 19,
+    "name": "InnovationLabs Tech",
+    "category": "Technology",
+    "description": "Innovation and research services for cutting-edge technology development.",
+    "provider": "InnovationLabs Tech",
+    "price_range": "$$$$",
+    "rating": 4.7,
+    "location": "6th October City",
+    "phone": "+20-2-9012-3456",
+    "email": "info@innovationlabs.com",
+    "website": "www.innovationlabs.com",
+    "features": [
+      "R&D",
+      "Innovation",
+      "Prototyping",
+      "Technology Transfer"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 20,
+    "name": "QualityAssurance Corp",
+    "category": "Quality Control",
+    "description": "Quality assurance and testing services for products and processes.",
+    "provider": "QualityAssurance Corp",
+    "price_range": "$$$",
+    "rating": 4.4,
+    "location": "Maadi",
+    "phone": "+20-2-0123-4567",
+    "email": "info@qualityassurance.com",
+    "website": "www.qualityassurance.com",
+    "features": [
+      "Quality Testing",
+      "Process Control",
+      "Certification",
+      "Auditing"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 21,
+    "name": "FutureTech Robotics",
+    "category": "Technology",
+    "description": "Robotics and automation solutions for industrial and commercial applications.",
+    "provider": "FutureTech Robotics",
+    "price_range": "$$$$",
+    "rating": 4.6,
+    "location": "Heliopolis",
+    "phone": "+20-2-1234-5678",
+    "email": "info@futuretech.com",
+    "website": "www.futuretech.com",
+    "features": [
+      "Industrial Robotics",
+      "Automation",
+      "AI Integration",
+      "Custom Solutions"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 22,
+    "name": "CloudTech Services",
+    "category": "Technology",
+    "description": "Cloud computing and infrastructure services for scalable business solutions.",
+    "provider": "CloudTech Services",
+    "price_range": "$$$",
+    "rating": 4.5,
+    "location": "Zamalek",
+    "phone": "+20-2-2345-6789",
+    "email": "info@cloudtech.com",
+    "website": "www.cloudtech.com",
+    "features": [
+      "Cloud Computing",
+      "Infrastructure",
+      "Scalability",
+      "Security"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 23,
+    "name": "BioTech Research",
+    "category": "Healthcare",
+    "description": "Biotechnology research and development services for medical innovations.",
+    "provider": "BioTech Research",
+    "price_range": "$$$$",
+    "rating": 4.7,
+    "location": "Dahab",
+    "phone": "+20-69-3456-7890",
+    "email": "info@biotech.com",
+    "website": "www.biotech.com",
+    "features": [
+      "Biotechnology",
+      "Medical Research",
+      "Clinical Trials",
+      "Innovation"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 24,
+    "name": "El Gouna Resort",
+    "category": "Hospitality",
+    "description": "Luxury resort and hospitality services with world-class amenities.",
+    "provider": "El Gouna Resort",
+    "price_range": "$$$$",
+    "rating": 4.8,
+    "location": "El Gouna",
+    "phone": "+20-65-4567-8901",
+    "email": "info@elgounaresort.com",
+    "website": "www.elgounaresort.com",
+    "features": [
+      "Luxury Accommodation",
+      "Fine Dining",
+      "Spa Services",
+      "Water Sports"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 25,
+    "name": "Marsa Alam Lodge",
+    "category": "Tourism",
+    "description": "Desert lodge and adventure tourism services in the Red Sea region.",
+    "provider": "Marsa Alam Lodge",
+    "price_range": "$$$",
+    "rating": 4.4,
+    "location": "Marsa Alam",
+    "phone": "+20-65-5678-9012",
+    "email": "info@marsaalamlodge.com",
+    "website": "www.marsaalamlodge.com",
+    "features": [
+      "Desert Tours",
+      "Adventure Activities",
+      "Lodge Accommodation",
+      "Cultural Experiences"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 26,
+    "name": "Siwa Oasis",
+    "category": "Tourism",
+    "description": "Traditional oasis tourism and cultural heritage services.",
+    "provider": "Siwa Oasis",
+    "price_range": "$$",
+    "rating": 4.3,
+    "location": "Siwa Oasis",
+    "phone": "+20-46-6789-0123",
+    "email": "info@siwaoasis.com",
+    "website": "www.siwaoasis.com",
+    "features": [
+      "Cultural Tours",
+      "Traditional Accommodation",
+      "Local Experiences",
+      "Heritage Sites"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 27,
+    "name": "Bahariya Camp",
+    "category": "Tourism",
+    "description": "Desert camping and adventure tourism in the Western Desert.",
+    "provider": "Bahariya Camp",
+    "price_range": "$",
+    "rating": 4.2,
+    "location": "Bahariya Oasis",
+    "phone": "+20-84-7890-1234",
+    "email": "info@bahariyacamp.com",
+    "website": "www.bahariyacamp.com",
+    "features": [
+      "Desert Camping",
+      "Adventure Tours",
+      "Stargazing",
+      "Traditional Meals"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 28,
+    "name": "Farafra Desert",
+    "category": "Tourism",
+    "description": "Remote desert tourism and eco-adventure services.",
+    "provider": "Farafra Desert",
+    "price_range": "$$",
+    "rating": 4.1,
+    "location": "Farafra Oasis",
+    "phone": "+20-88-8901-2345",
+    "email": "info@farafradesert.com",
+    "website": "www.farafradesert.com",
+    "features": [
+      "Eco-Tourism",
+      "Desert Adventures",
+      "Cultural Immersion",
+      "Sustainable Travel"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 29,
+    "name": "Dakhla Oasis",
+    "category": "Tourism",
+    "description": "Oasis tourism and cultural heritage experiences in the Western Desert.",
+    "provider": "Dakhla Oasis",
+    "price_range": "$$",
+    "rating": 4.3,
+    "location": "Dakhla Oasis",
+    "phone": "+20-92-9012-3456",
+    "email": "info@dakhlaoasis.com",
+    "website": "www.dakhlaoasis.com",
+    "features": [
+      "Oasis Tours",
+      "Cultural Heritage",
+      "Traditional Crafts",
+      "Local Cuisine"
+    ],
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+  }
+]

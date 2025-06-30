@@ -1,0 +1,752 @@
+[
+  {
+    "id": 1,
+    "name": "Cairo Medical Center",
+    "type": "General",
+    "address": "123 New Cairo, Cairo",
+    "phone": "+20-2-1234-5678",
+    "email": "info@cairomedical.com",
+    "website": "www.cairomedical.com",
+    "rating": 4.8,
+    "beds": 500,
+    "specialties": [
+      "Cardiology",
+      "Neurology",
+      "Oncology",
+      "Emergency"
+    ],
+    "facilities": [
+      "ICU",
+      "Operating Rooms",
+      "Laboratory",
+      "Pharmacy"
+    ],
+    "description": "Comprehensive medical center with state-of-the-art facilities.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 2,
+    "name": "Alexandria General Hospital",
+    "type": "General",
+    "address": "456 Mediterranean Coast, Alexandria",
+    "phone": "+20-3-2345-6789",
+    "email": "info@alexandriahospital.com",
+    "website": "www.alexandriahospital.com",
+    "rating": 4.6,
+    "beds": 400,
+    "specialties": [
+      "Internal Medicine",
+      "Surgery",
+      "Pediatrics",
+      "Obstetrics"
+    ],
+    "facilities": [
+      "Emergency Room",
+      "Surgical Suites",
+      "Laboratory",
+      "Radiology"
+    ],
+    "description": "Leading general hospital serving Alexandria region.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 3,
+    "name": "Giza Specialized Hospital",
+    "type": "Specialized",
+    "address": "789 Giza Plateau, Giza",
+    "phone": "+20-2-3456-7890",
+    "email": "info@gizaspecialized.com",
+    "website": "www.gizaspecialized.com",
+    "rating": 4.7,
+    "beds": 300,
+    "specialties": [
+      "Orthopedics",
+      "Rehabilitation",
+      "Sports Medicine",
+      "Physical Therapy"
+    ],
+    "facilities": [
+      "Rehabilitation Center",
+      "Sports Medicine Clinic",
+      "Physical Therapy",
+      "Gym"
+    ],
+    "description": "Specialized hospital focusing on orthopedic and rehabilitation care.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 4,
+    "name": "Luxor Heart Hospital",
+    "type": "Cardiac",
+    "address": "321 Karnak Road, Luxor",
+    "phone": "+20-97-4567-8901",
+    "email": "info@luxorheart.com",
+    "website": "www.luxorheart.com",
+    "rating": 4.5,
+    "beds": 200,
+    "specialties": [
+      "Cardiology",
+      "Cardiac Surgery",
+      "Interventional Cardiology",
+      "Cardiac Rehabilitation"
+    ],
+    "facilities": [
+      "Cardiac Catheterization Lab",
+      "Operating Rooms",
+      "ICU",
+      "Cardiac Rehabilitation"
+    ],
+    "description": "Specialized cardiac care hospital with advanced heart treatment.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 5,
+    "name": "Aswan Children's Hospital",
+    "type": "Pediatric",
+    "address": "654 Nile River, Aswan",
+    "phone": "+20-97-5678-9012",
+    "email": "info@aswanchildren.com",
+    "website": "www.aswanchildren.com",
+    "rating": 4.6,
+    "beds": 150,
+    "specialties": [
+      "Pediatrics",
+      "Neonatology",
+      "Pediatric Surgery",
+      "Child Psychology"
+    ],
+    "facilities": [
+      "Neonatal ICU",
+      "Pediatric Wards",
+      "Play Therapy",
+      "Family Center"
+    ],
+    "description": "Dedicated children's hospital with child-friendly environment.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 6,
+    "name": "Hurghada Emergency Hospital",
+    "type": "Emergency",
+    "address": "987 Red Sea Coast, Hurghada",
+    "phone": "+20-65-6789-0123",
+    "email": "info@hurghadaemergency.com",
+    "website": "www.hurghadaemergency.com",
+    "rating": 4.4,
+    "beds": 100,
+    "specialties": [
+      "Emergency Medicine",
+      "Trauma",
+      "Diving Medicine",
+      "Tourist Care"
+    ],
+    "facilities": [
+      "Emergency Room",
+      "Trauma Center",
+      "Hyperbaric Chamber",
+      "Helipad"
+    ],
+    "description": "Emergency hospital specializing in trauma and diving accidents.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 7,
+    "name": "Sharm El Sheikh International Medical Center",
+    "type": "International",
+    "address": "147 Sinai Peninsula, Sharm El Sheikh",
+    "phone": "+20-69-7890-1234",
+    "email": "info@sharmmedical.com",
+    "website": "www.sharmmedical.com",
+    "rating": 4.8,
+    "beds": 250,
+    "specialties": [
+      "International Medicine",
+      "Tourist Health",
+      "Dermatology",
+      "Cosmetic Surgery"
+    ],
+    "facilities": [
+      "International Clinic",
+      "Cosmetic Center",
+      "Spa",
+      "Concierge Service"
+    ],
+    "description": "International medical center catering to tourists and expatriates.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 8,
+    "name": "Port Said Maritime Hospital",
+    "type": "Maritime",
+    "address": "258 Suez Canal, Port Said",
+    "phone": "+20-66-8901-2345",
+    "email": "info@portsaidmaritime.com",
+    "website": "www.portsaidmaritime.com",
+    "rating": 4.3,
+    "beds": 120,
+    "specialties": [
+      "Maritime Medicine",
+      "Occupational Health",
+      "Infectious Diseases",
+      "Emergency"
+    ],
+    "facilities": [
+      "Maritime Clinic",
+      "Quarantine Center",
+      "Emergency Room",
+      "Laboratory"
+    ],
+    "description": "Specialized hospital for maritime workers and seafarers.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 9,
+    "name": "Mansoura University Hospital",
+    "type": "Academic",
+    "address": "369 Delta Region, Mansoura",
+    "phone": "+20-50-9012-3456",
+    "email": "info@mansourauniversity.com",
+    "website": "www.mansourauniversity.com",
+    "rating": 4.7,
+    "beds": 600,
+    "specialties": [
+      "All Specialties",
+      "Research",
+      "Medical Education",
+      "Clinical Trials"
+    ],
+    "facilities": [
+      "Research Labs",
+      "Medical Library",
+      "Conference Center",
+      "Training Facilities"
+    ],
+    "description": "Academic medical center with research and education focus.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 10,
+    "name": "Tanta Cancer Hospital",
+    "type": "Oncology",
+    "address": "741 Tanta University, Tanta",
+    "phone": "+20-40-0123-4567",
+    "email": "info@tantacancer.com",
+    "website": "www.tantacancer.com",
+    "rating": 4.5,
+    "beds": 200,
+    "specialties": [
+      "Oncology",
+      "Radiation Therapy",
+      "Chemotherapy",
+      "Palliative Care"
+    ],
+    "facilities": [
+      "Radiation Center",
+      "Chemotherapy Unit",
+      "Palliative Care",
+      "Support Groups"
+    ],
+    "description": "Comprehensive cancer treatment and research center.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 11,
+    "name": "Zagazig Eye Hospital",
+    "type": "Ophthalmology",
+    "address": "852 Zagazig Center",
+    "phone": "+20-55-1234-5678",
+    "email": "info@zagazigeye.com",
+    "website": "www.zagazigeye.com",
+    "rating": 4.6,
+    "beds": 80,
+    "specialties": [
+      "Ophthalmology",
+      "Retinal Surgery",
+      "Cornea Transplant",
+      "Glaucoma"
+    ],
+    "facilities": [
+      "Operating Rooms",
+      "Laser Center",
+      "Optical Shop",
+      "Eye Bank"
+    ],
+    "description": "Specialized eye hospital with advanced ophthalmic care.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 12,
+    "name": "Benha Psychiatric Hospital",
+    "type": "Psychiatric",
+    "address": "963 Benha City",
+    "phone": "+20-13-2345-6789",
+    "email": "info@benhapsychiatric.com",
+    "website": "www.benhapsychiatric.com",
+    "rating": 4.4,
+    "beds": 150,
+    "specialties": [
+      "Psychiatry",
+      "Psychology",
+      "Addiction Treatment",
+      "Rehabilitation"
+    ],
+    "facilities": [
+      "Psychiatric Wards",
+      "Therapy Rooms",
+      "Recreation Center",
+      "Family Counseling"
+    ],
+    "description": "Comprehensive psychiatric care and mental health treatment.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 13,
+    "name": "Damanhur Women's Hospital",
+    "type": "Obstetrics",
+    "address": "159 Damanhur Square",
+    "phone": "+20-45-3456-7890",
+    "email": "info@damanhurwomen.com",
+    "website": "www.damanhurwomen.com",
+    "rating": 4.5,
+    "beds": 120,
+    "specialties": [
+      "Obstetrics",
+      "Gynecology",
+      "Fertility",
+      "Women's Health"
+    ],
+    "facilities": [
+      "Delivery Rooms",
+      "NICU",
+      "Fertility Clinic",
+      "Women's Health Center"
+    ],
+    "description": "Specialized women's hospital with comprehensive maternity care.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 14,
+    "name": "Kafr El Sheikh Dental Hospital",
+    "type": "Dental",
+    "address": "753 Mediterranean Coast, Kafr El Sheikh",
+    "phone": "+20-47-4567-8901",
+    "email": "info@kafrelsheikhdental.com",
+    "website": "www.kafrelsheikhdental.com",
+    "rating": 4.3,
+    "beds": 50,
+    "specialties": [
+      "Dentistry",
+      "Oral Surgery",
+      "Orthodontics",
+      "Cosmetic Dentistry"
+    ],
+    "facilities": [
+      "Dental Clinics",
+      "Oral Surgery Suites",
+      "Orthodontic Center",
+      "Dental Lab"
+    ],
+    "description": "Comprehensive dental care and oral surgery hospital.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 15,
+    "name": "Suez Trauma Hospital",
+    "type": "Trauma",
+    "address": "357 Suez Canal, Suez",
+    "phone": "+20-62-5678-9012",
+    "email": "info@sueztrauma.com",
+    "website": "www.sueztrauma.com",
+    "rating": 4.6,
+    "beds": 180,
+    "specialties": [
+      "Trauma Surgery",
+      "Emergency Medicine",
+      "Burn Care",
+      "Rehabilitation"
+    ],
+    "facilities": [
+      "Trauma Center",
+      "Burn Unit",
+      "Emergency Room",
+      "Rehabilitation Center"
+    ],
+    "description": "Specialized trauma hospital for critical injury care.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 16,
+    "name": "Ismailia Rehabilitation Hospital",
+    "type": "Rehabilitation",
+    "address": "486 Lake Timsah, Ismailia",
+    "phone": "+20-64-6789-0123",
+    "email": "info@ismailiarehab.com",
+    "website": "www.ismailiarehab.com",
+    "rating": 4.4,
+    "beds": 100,
+    "specialties": [
+      "Physical Therapy",
+      "Occupational Therapy",
+      "Speech Therapy",
+      "Sports Medicine"
+    ],
+    "facilities": [
+      "Rehabilitation Center",
+      "Physical Therapy Gym",
+      "Occupational Therapy",
+      "Sports Medicine"
+    ],
+    "description": "Comprehensive rehabilitation hospital for recovery and therapy.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 17,
+    "name": "New Cairo Surgical Hospital",
+    "type": "Surgical",
+    "address": "159 New Cairo District",
+    "phone": "+20-2-7890-1234",
+    "email": "info@newcairosurgical.com",
+    "website": "www.newcairosurgical.com",
+    "rating": 4.7,
+    "beds": 300,
+    "specialties": [
+      "General Surgery",
+      "Cardiac Surgery",
+      "Neurosurgery",
+      "Orthopedic Surgery"
+    ],
+    "facilities": [
+      "Operating Rooms",
+      "Surgical ICU",
+      "Recovery Rooms",
+      "Surgical Training"
+    ],
+    "description": "Advanced surgical hospital with cutting-edge procedures.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 18,
+    "name": "6th October Sports Medicine Hospital",
+    "type": "Sports Medicine",
+    "address": "753 6th October City",
+    "phone": "+20-2-8901-2345",
+    "email": "info@6octobersports.com",
+    "website": "www.6octobersports.com",
+    "rating": 4.5,
+    "beds": 80,
+    "specialties": [
+      "Sports Medicine",
+      "Orthopedics",
+      "Physical Therapy",
+      "Sports Psychology"
+    ],
+    "facilities": [
+      "Sports Medicine Clinic",
+      "Physical Therapy",
+      "Sports Psychology",
+      "Fitness Center"
+    ],
+    "description": "Specialized sports medicine hospital for athletes and sports injuries.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 19,
+    "name": "Maadi Geriatric Hospital",
+    "type": "Geriatric",
+    "address": "486 Maadi District, Cairo",
+    "phone": "+20-2-9012-3456",
+    "email": "info@maadigeriatric.com",
+    "website": "www.maadigeriatric.com",
+    "rating": 4.4,
+    "beds": 120,
+    "specialties": [
+      "Geriatrics",
+      "Palliative Care",
+      "Memory Care",
+      "Rehabilitation"
+    ],
+    "facilities": [
+      "Geriatric Wards",
+      "Memory Care Unit",
+      "Palliative Care",
+      "Recreation Center"
+    ],
+    "description": "Specialized geriatric hospital for elderly care and support.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 20,
+    "name": "Heliopolis Military Hospital",
+    "type": "Military",
+    "address": "159 Heliopolis, Cairo",
+    "phone": "+20-2-0123-4567",
+    "email": "info@heliopolismilitary.com",
+    "website": "www.heliopolismilitary.com",
+    "rating": 4.6,
+    "beds": 400,
+    "specialties": [
+      "Military Medicine",
+      "Trauma",
+      "Emergency",
+      "Rehabilitation"
+    ],
+    "facilities": [
+      "Military Clinic",
+      "Trauma Center",
+      "Emergency Room",
+      "Rehabilitation Center"
+    ],
+    "description": "Military hospital serving armed forces and their families.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 21,
+    "name": "Zamalek Cosmetic Hospital",
+    "type": "Cosmetic",
+    "address": "753 Zamalek Island, Cairo",
+    "phone": "+20-2-1234-5678",
+    "email": "info@zamalekcosmetic.com",
+    "website": "www.zamalekcosmetic.com",
+    "rating": 4.5,
+    "beds": 60,
+    "specialties": [
+      "Cosmetic Surgery",
+      "Dermatology",
+      "Plastic Surgery",
+      "Aesthetic Medicine"
+    ],
+    "facilities": [
+      "Cosmetic Surgery Suites",
+      "Dermatology Clinic",
+      "Spa",
+      "Recovery Center"
+    ],
+    "description": "Specialized cosmetic and aesthetic medicine hospital.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 22,
+    "name": "Dahab Diving Medicine Hospital",
+    "type": "Diving Medicine",
+    "address": "357 Red Sea Coast, Dahab",
+    "phone": "+20-69-2345-6789",
+    "email": "info@dahabdiving.com",
+    "website": "www.dahabdiving.com",
+    "rating": 4.3,
+    "beds": 40,
+    "specialties": [
+      "Diving Medicine",
+      "Hyperbaric Medicine",
+      "Emergency",
+      "Rehabilitation"
+    ],
+    "facilities": [
+      "Hyperbaric Chamber",
+      "Diving Clinic",
+      "Emergency Room",
+      "Rehabilitation"
+    ],
+    "description": "Specialized hospital for diving accidents and hyperbaric treatment.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 23,
+    "name": "El Gouna Wellness Hospital",
+    "type": "Wellness",
+    "address": "486 Red Sea Coast, El Gouna",
+    "phone": "+20-65-3456-7890",
+    "email": "info@elgounawellness.com",
+    "website": "www.elgounawellness.com",
+    "rating": 4.7,
+    "beds": 80,
+    "specialties": [
+      "Wellness Medicine",
+      "Alternative Medicine",
+      "Spa Therapy",
+      "Nutrition"
+    ],
+    "facilities": [
+      "Wellness Center",
+      "Spa",
+      "Nutrition Clinic",
+      "Meditation Center"
+    ],
+    "description": "Wellness hospital focusing on holistic health and alternative medicine.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 24,
+    "name": "Marsa Alam Desert Medicine Hospital",
+    "type": "Desert Medicine",
+    "address": "159 Red Sea Coast, Marsa Alam",
+    "phone": "+20-65-4567-8901",
+    "email": "info@marsaalamdesert.com",
+    "website": "www.marsaalamdesert.com",
+    "rating": 4.2,
+    "beds": 60,
+    "specialties": [
+      "Desert Medicine",
+      "Heat Illness",
+      "Emergency",
+      "Tourist Health"
+    ],
+    "facilities": [
+      "Desert Clinic",
+      "Emergency Room",
+      "Tourist Health Center",
+      "Laboratory"
+    ],
+    "description": "Specialized hospital for desert-related health issues.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 25,
+    "name": "Siwa Traditional Medicine Hospital",
+    "type": "Traditional Medicine",
+    "address": "753 Siwa Oasis",
+    "phone": "+20-46-5678-9012",
+    "email": "info@siwatraditional.com",
+    "website": "www.siwatraditional.com",
+    "rating": 4.1,
+    "beds": 40,
+    "specialties": [
+      "Traditional Medicine",
+      "Herbal Medicine",
+      "Alternative Therapy",
+      "Wellness"
+    ],
+    "facilities": [
+      "Traditional Clinic",
+      "Herbal Garden",
+      "Wellness Center",
+      "Meditation Rooms"
+    ],
+    "description": "Traditional medicine hospital using ancient healing methods.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 26,
+    "name": "Bahariya Emergency Clinic",
+    "type": "Emergency Clinic",
+    "address": "486 Bahariya Oasis",
+    "phone": "+20-84-6789-0123",
+    "email": "info@bahariyaemergency.com",
+    "website": "www.bahariyaemergency.com",
+    "rating": 4,
+    "beds": 20,
+    "specialties": [
+      "Emergency Medicine",
+      "Basic Care",
+      "Tourist Health",
+      "First Aid"
+    ],
+    "facilities": [
+      "Emergency Room",
+      "Basic Laboratory",
+      "Pharmacy",
+      "First Aid Station"
+    ],
+    "description": "Emergency clinic serving the remote Bahariya Oasis region.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 27,
+    "name": "Farafra Health Center",
+    "type": "Health Center",
+    "address": "159 Farafra Oasis",
+    "phone": "+20-88-7890-1234",
+    "email": "info@farafrahealth.com",
+    "website": "www.farafrahealth.com",
+    "rating": 3.9,
+    "beds": 15,
+    "specialties": [
+      "Primary Care",
+      "Basic Emergency",
+      "Maternal Health",
+      "Child Health"
+    ],
+    "facilities": [
+      "Primary Care Clinic",
+      "Maternity Ward",
+      "Pharmacy",
+      "Laboratory"
+    ],
+    "description": "Basic health center serving the remote Farafra community.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 28,
+    "name": "Dakhla Community Hospital",
+    "type": "Community",
+    "address": "753 Dakhla Oasis",
+    "phone": "+20-92-8901-2345",
+    "email": "info@dakhlacommunity.com",
+    "website": "www.dakhlacommunity.com",
+    "rating": 4.2,
+    "beds": 80,
+    "specialties": [
+      "Primary Care",
+      "Maternal Health",
+      "Pediatrics",
+      "Emergency"
+    ],
+    "facilities": [
+      "Primary Care Clinic",
+      "Maternity Ward",
+      "Pediatric Ward",
+      "Emergency Room"
+    ],
+    "description": "Community hospital serving the Dakhla Oasis population.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 29,
+    "name": "Kharga Rural Hospital",
+    "type": "Rural",
+    "address": "486 Kharga Oasis",
+    "phone": "+20-92-9012-3456",
+    "email": "info@khargarural.com",
+    "website": "www.khargarural.com",
+    "rating": 4,
+    "beds": 60,
+    "specialties": [
+      "Primary Care",
+      "Maternal Health",
+      "Emergency",
+      "Basic Surgery"
+    ],
+    "facilities": [
+      "Primary Care Clinic",
+      "Operating Room",
+      "Maternity Ward",
+      "Laboratory"
+    ],
+    "description": "Rural hospital providing essential healthcare services.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  },
+  {
+    "id": 30,
+    "name": "Cairo Airport Medical Center",
+    "type": "Medical Center",
+    "address": "159 Cairo International Airport",
+    "phone": "+20-2-0123-4567",
+    "email": "info@cairoairportmedical.com",
+    "website": "www.cairoairportmedical.com",
+    "rating": 4.3,
+    "beds": 30,
+    "specialties": [
+      "Emergency Medicine",
+      "Travel Medicine",
+      "First Aid",
+      "Basic Care"
+    ],
+    "facilities": [
+      "Emergency Room",
+      "Travel Clinic",
+      "First Aid Station",
+      "Pharmacy"
+    ],
+    "description": "Medical center serving airport travelers and staff.",
+    "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&h=600&fit=crop"
+  }
+]

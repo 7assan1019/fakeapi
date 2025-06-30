@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "productId": 1,
+    "userId": 1,
+    "rating": 5,
+    "comment": "Excellent sound quality and very comfortable for long listening sessions.",
+    "date": "2024-01-15"
+  },
+  {
+    "id": 2,
+    "productId": 1,
+    "userId": 2,
+    "rating": 4,
+    "comment": "Great headphones, but the battery life could be better.",
+    "date": "2024-01-20"
+  },
+  {
+    "id": 3,
+    "productId": 2,
+    "userId": 3,
+    "rating": 5,
+    "comment": "Perfect for tracking my daily workouts and runs.",
+    "date": "2024-01-18"
+  },
+  {
+    "id": 4,
+    "productId": 3,
+    "userId": 4,
+    "rating": 4,
+    "comment": "Very comfortable and eco-friendly material.",
+    "date": "2024-01-22"
+  },
+  {
+    "id": 5,
+    "productId": 4,
+    "userId": 5,
+    "rating": 5,
+    "comment": "Makes the best coffee every morning!",
+    "date": "2024-01-25"
+  },
+  {
+    "id": 6,
+    "productId": 5,
+    "userId": 6,
+    "rating": 4,
+    "comment": "Great portable speaker with good sound quality.",
+    "date": "2024-01-28"
+  },
+  {
+    "id": 7,
+    "productId": 6,
+    "userId": 7,
+    "rating": 5,
+    "comment": "Perfect for my yoga practice, very grippy surface.",
+    "date": "2024-02-01"
+  },
+  {
+    "id": 8,
+    "productId": 7,
+    "userId": 8,
+    "rating": 4,
+    "comment": "Natural ingredients and keeps my skin hydrated.",
+    "date": "2024-02-05"
+  },
+  {
+    "id": 9,
+    "productId": 8,
+    "userId": 9,
+    "rating": 5,
+    "comment": "Educational and fun for the whole family.",
+    "date": "2024-02-08"
+  },
+  {
+    "id": 10,
+    "productId": 9,
+    "userId": 10,
+    "rating": 4,
+    "comment": "Secure mount that doesn't fall off during driving.",
+    "date": "2024-02-12"
+  },
+  {
+    "id": 11,
+    "productId": 10,
+    "userId": 11,
+    "rating": 5,
+    "comment": "Complete set with everything I need for gardening.",
+    "date": "2024-02-15"
+  },
+  {
+    "id": 12,
+    "productId": 11,
+    "userId": 12,
+    "rating": 4,
+    "comment": "Fast charging and works with all my devices.",
+    "date": "2024-02-18"
+  },
+  {
+    "id": 13,
+    "productId": 12,
+    "userId": 13,
+    "rating": 5,
+    "comment": "Lightweight and perfect for my daily runs.",
+    "date": "2024-02-20"
+  },
+  {
+    "id": 14,
+    "productId": 13,
+    "userId": 14,
+    "rating": 4,
+    "comment": "Easy to set up and control all my smart devices.",
+    "date": "2024-02-25"
+  },
+  {
+    "id": 15,
+    "productId": 14,
+    "userId": 15,
+    "rating": 5,
+    "comment": "Delicious organic teas with great health benefits.",
+    "date": "2024-02-28"
+  },
+  {
+    "id": 16,
+    "productId": 15,
+    "userId": 16,
+    "rating": 4,
+    "comment": "Beautiful puzzle design and high-quality pieces.",
+    "date": "2024-03-01"
+  },
+  {
+    "id": 17,
+    "productId": 16,
+    "userId": 17,
+    "rating": 4,
+    "comment": "Long-lasting fragrance and natural ingredients.",
+    "date": "2024-03-05"
+  },
+  {
+    "id": 18,
+    "productId": 17,
+    "userId": 18,
+    "rating": 5,
+    "comment": "Professional quality knives that stay sharp.",
+    "date": "2024-03-08"
+  },
+  {
+    "id": 19,
+    "productId": 18,
+    "userId": 19,
+    "rating": 4,
+    "comment": "Adjustable and sturdy stand for my tablet.",
+    "date": "2024-03-12"
+  },
+  {
+    "id": 20,
+    "productId": 19,
+    "userId": 20,
+    "rating": 5,
+    "comment": "Perfect for home workouts and strength training.",
+    "date": "2024-03-15"
+  },
+  {
+    "id": 21,
+    "productId": 20,
+    "userId": 21,
+    "rating": 4,
+    "comment": "Gentle on my hair and leaves it feeling soft.",
+    "date": "2024-03-18"
+  },
+  {
+    "id": 22,
+    "productId": 21,
+    "userId": 22,
+    "rating": 5,
+    "comment": "Hours of fun for the whole family.",
+    "date": "2024-03-20"
+  },
+  {
+    "id": 23,
+    "productId": 22,
+    "userId": 23,
+    "rating": 4,
+    "comment": "Complete kit that makes car washing easy.",
+    "date": "2024-03-25"
+  },
+  {
+    "id": 24,
+    "productId": 23,
+    "userId": 24,
+    "rating": 4,
+    "comment": "Great color options and easy to control.",
+    "date": "2024-03-28"
+  },
+  {
+    "id": 25,
+    "productId": 24,
+    "userId": 25,
+    "rating": 4,
+    "comment": "Perfect support for my yoga practice.",
+    "date": "2024-04-01"
+  },
+  {
+    "id": 26,
+    "productId": 25,
+    "userId": 26,
+    "rating": 5,
+    "comment": "Natural ingredients and leaves skin feeling great.",
+    "date": "2024-04-05"
+  },
+  {
+    "id": 27,
+    "productId": 26,
+    "userId": 27,
+    "rating": 5,
+    "comment": "Educational and engaging for young minds.",
+    "date": "2024-04-08"
+  },
+  {
+    "id": 28,
+    "productId": 27,
+    "userId": 28,
+    "rating": 4,
+    "comment": "Perfect fit and easy to clean.",
+    "date": "2024-04-12"
+  },
+  {
+    "id": 29,
+    "productId": 28,
+    "userId": 29,
+    "rating": 5,
+    "comment": "Saves energy and keeps my home comfortable.",
+    "date": "2024-04-15"
+  },
+  {
+    "id": 30,
+    "productId": 29,
+    "userId": 30,
+    "rating": 4,
+    "comment": "Versatile bands for various exercises.",
+    "date": "2024-04-18"
+  }
+]

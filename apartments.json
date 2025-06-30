@@ -1,0 +1,746 @@
+[
+  {
+    "id": 1,
+    "title": "Modern Downtown Apartment",
+    "description": "Luxurious 2-bedroom apartment in the heart of the city with stunning views",
+    "price": 2500,
+    "location": "Downtown Cairo",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 120,
+    "amenities": [
+      "Balcony",
+      "Parking",
+      "Gym",
+      "Pool",
+      "Security"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 2,
+    "title": "Cozy Studio Apartment",
+    "description": "Perfect studio apartment for young professionals with modern amenities",
+    "price": 1200,
+    "location": "Zamalek, Cairo",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 45,
+    "amenities": [
+      "Furnished",
+      "Internet",
+      "Security",
+      "24/7 Support"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 3,
+    "title": "Family Apartment with Garden",
+    "description": "Spacious 3-bedroom apartment with private garden and parking",
+    "price": 3200,
+    "location": "Maadi, Cairo",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "area": 180,
+    "amenities": [
+      "Garden",
+      "Parking",
+      "Playground",
+      "Security",
+      "Pool"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "rented"
+  },
+  {
+    "id": 4,
+    "title": "Luxury Penthouse",
+    "description": "Exclusive penthouse with panoramic city views and premium finishes",
+    "price": 8000,
+    "location": "New Cairo",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "area": 250,
+    "amenities": [
+      "Terrace",
+      "Jacuzzi",
+      "Gym",
+      "Concierge",
+      "Security"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 5,
+    "title": "Student-Friendly Apartment",
+    "description": "Affordable 1-bedroom apartment near universities and public transport",
+    "price": 900,
+    "location": "Dokki, Cairo",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 40,
+    "amenities": [
+      "Furnished",
+      "Internet",
+      "Security",
+      "Near Metro"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 6,
+    "title": "Executive Apartment",
+    "description": "Professional 2-bedroom apartment with business center access",
+    "price": 2800,
+    "location": "Heliopolis, Cairo",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 110,
+    "amenities": [
+      "Business Center",
+      "Parking",
+      "Gym",
+      "Security",
+      "WiFi"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 7,
+    "title": "Beachfront Apartment",
+    "description": "Beautiful 2-bedroom apartment with direct beach access",
+    "price": 4500,
+    "location": "North Coast",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 130,
+    "amenities": [
+      "Beach Access",
+      "Pool",
+      "Restaurant",
+      "Security",
+      "Parking"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "rented"
+  },
+  {
+    "id": 8,
+    "title": "Garden Apartment",
+    "description": "Peaceful 1-bedroom apartment with shared garden and community space",
+    "price": 1500,
+    "location": "Agouza, Cairo",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 60,
+    "amenities": [
+      "Shared Garden",
+      "Community Space",
+      "Security",
+      "Parking"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 9,
+    "title": "Modern Loft",
+    "description": "Contemporary loft-style apartment with high ceilings and open plan",
+    "price": 2200,
+    "location": "6th October City",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 80,
+    "amenities": [
+      "High Ceilings",
+      "Open Plan",
+      "Balcony",
+      "Security",
+      "Parking"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 10,
+    "title": "Family Compound Apartment",
+    "description": "Large 4-bedroom apartment in a family-friendly compound",
+    "price": 5000,
+    "location": "Sheikh Zayed City",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "area": 220,
+    "amenities": [
+      "Compound",
+      "Playground",
+      "Pool",
+      "Gym",
+      "Security"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "rented"
+  },
+  {
+    "id": 11,
+    "title": "Downtown Studio",
+    "description": "Compact studio apartment in the heart of downtown",
+    "price": 1100,
+    "location": "Tahrir Square, Cairo",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 35,
+    "amenities": [
+      "Furnished",
+      "Internet",
+      "Security",
+      "Central Location"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 12,
+    "title": "Luxury 3-Bedroom Apartment",
+    "description": "Premium 3-bedroom apartment with luxury amenities and services",
+    "price": 6000,
+    "location": "Palm Hills, Cairo",
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "area": 200,
+    "amenities": [
+      "Concierge",
+      "Spa",
+      "Restaurant",
+      "Pool",
+      "Security"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 13,
+    "title": "Student Housing",
+    "description": "Furnished 1-bedroom apartment perfect for students",
+    "price": 800,
+    "location": "Nasr City, Cairo",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 40,
+    "amenities": [
+      "Furnished",
+      "Internet",
+      "Study Area",
+      "Security"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "rented"
+  },
+  {
+    "id": 14,
+    "title": "Business District Apartment",
+    "description": "Professional 2-bedroom apartment in the business district",
+    "price": 3000,
+    "location": "Smart Village, Cairo",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 120,
+    "amenities": [
+      "Business Center",
+      "Meeting Rooms",
+      "Gym",
+      "Security"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 15,
+    "title": "Mountain View Apartment",
+    "description": "Beautiful 2-bedroom apartment with mountain views",
+    "price": 2800,
+    "location": "Katameya Heights, Cairo",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 110,
+    "amenities": [
+      "Mountain View",
+      "Balcony",
+      "Gym",
+      "Security",
+      "Parking"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 16,
+    "title": "Coastal Apartment",
+    "description": "Charming 1-bedroom apartment near the coast",
+    "price": 1800,
+    "location": "Alexandria",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 55,
+    "amenities": [
+      "Coastal View",
+      "Balcony",
+      "Security",
+      "Parking"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "rented"
+  },
+  {
+    "id": 17,
+    "title": "Golf Course Apartment",
+    "description": "Luxury 3-bedroom apartment overlooking the golf course",
+    "price": 5500,
+    "location": "Dreamland, Cairo",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "area": 180,
+    "amenities": [
+      "Golf Course View",
+      "Clubhouse",
+      "Pool",
+      "Security"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 18,
+    "title": "Historic District Apartment",
+    "description": "Charming 2-bedroom apartment in a historic building",
+    "price": 1600,
+    "location": "Old Cairo",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "area": 90,
+    "amenities": [
+      "Historic Building",
+      "High Ceilings",
+      "Security",
+      "Parking"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 19,
+    "title": "Lakeside Apartment",
+    "description": "Peaceful 2-bedroom apartment with lake views",
+    "price": 2200,
+    "location": "Al Rehab, Cairo",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 100,
+    "amenities": [
+      "Lake View",
+      "Balcony",
+      "Security",
+      "Parking"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "rented"
+  },
+  {
+    "id": 20,
+    "title": "Airport Area Apartment",
+    "description": "Convenient 1-bedroom apartment near the airport",
+    "price": 1400,
+    "location": "Airport Area, Cairo",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 50,
+    "amenities": [
+      "Near Airport",
+      "Shuttle Service",
+      "Security",
+      "Parking"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 21,
+    "title": "Medical District Apartment",
+    "description": "2-bedroom apartment near major hospitals and medical centers",
+    "price": 2000,
+    "location": "Abbassia, Cairo",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "area": 85,
+    "amenities": [
+      "Near Hospitals",
+      "Security",
+      "Parking",
+      "24/7 Support"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 22,
+    "title": "University Area Apartment",
+    "description": "Student-friendly 1-bedroom apartment near universities",
+    "price": 950,
+    "location": "Giza, Cairo",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 45,
+    "amenities": [
+      "Near Universities",
+      "Study Area",
+      "Internet",
+      "Security"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "rented"
+  },
+  {
+    "id": 23,
+    "title": "Shopping District Apartment",
+    "description": "Convenient 2-bedroom apartment near shopping centers",
+    "price": 2400,
+    "location": "City Stars Area, Cairo",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 95,
+    "amenities": [
+      "Near Shopping",
+      "Balcony",
+      "Security",
+      "Parking"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 24,
+    "title": "Cultural District Apartment",
+    "description": "Charming 1-bedroom apartment in the cultural district",
+    "price": 1300,
+    "location": "Garden City, Cairo",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 60,
+    "amenities": [
+      "Cultural District",
+      "Balcony",
+      "Security",
+      "Parking"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 25,
+    "title": "Sports Complex Apartment",
+    "description": "2-bedroom apartment near sports facilities and gyms",
+    "price": 2100,
+    "location": "Cairo Stadium Area",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "area": 90,
+    "amenities": [
+      "Near Sports Complex",
+      "Gym Access",
+      "Security",
+      "Parking"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "rented"
+  },
+  {
+    "id": 26,
+    "title": "Tech Hub Apartment",
+    "description": "Modern 1-bedroom apartment near technology companies",
+    "price": 1900,
+    "location": "Smart Village, Cairo",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 55,
+    "amenities": [
+      "Near Tech Companies",
+      "High-Speed Internet",
+      "Security",
+      "Parking"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 27,
+    "title": "Family Compound Studio",
+    "description": "Cozy studio apartment in a family-friendly compound",
+    "price": 1200,
+    "location": "Rehab City, Cairo",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 40,
+    "amenities": [
+      "Compound",
+      "Playground",
+      "Security",
+      "Parking"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 28,
+    "title": "Luxury Studio",
+    "description": "Premium studio apartment with luxury amenities",
+    "price": 1800,
+    "location": "Palm Hills, Cairo",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 50,
+    "amenities": [
+      "Luxury Finishes",
+      "Concierge",
+      "Pool",
+      "Security"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "rented"
+  },
+  {
+    "id": 29,
+    "title": "Business Traveler Apartment",
+    "description": "Fully furnished 2-bedroom apartment for business travelers",
+    "price": 3500,
+    "location": "New Cairo",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 110,
+    "amenities": [
+      "Fully Furnished",
+      "Business Center",
+      "Airport Transfer",
+      "Security"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 30,
+    "title": "Artist Loft",
+    "description": "Creative loft space perfect for artists and designers",
+    "price": 1600,
+    "location": "Mohandessin, Cairo",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 70,
+    "amenities": [
+      "High Ceilings",
+      "Natural Light",
+      "Storage Space",
+      "Security"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 31,
+    "title": "Senior Living Apartment",
+    "description": "Accessible 1-bedroom apartment designed for seniors",
+    "price": 1400,
+    "location": "Heliopolis, Cairo",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 65,
+    "amenities": [
+      "Accessible Design",
+      "Medical Support",
+      "Security",
+      "24/7 Care"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "rented"
+  },
+  {
+    "id": 32,
+    "title": "Pet-Friendly Apartment",
+    "description": "2-bedroom apartment that welcomes pets with outdoor space",
+    "price": 2000,
+    "location": "Maadi, Cairo",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "area": 85,
+    "amenities": [
+      "Pet-Friendly",
+      "Outdoor Space",
+      "Security",
+      "Parking"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 33,
+    "title": "Short-Term Rental",
+    "description": "Fully furnished 1-bedroom apartment for short-term stays",
+    "price": 100,
+    "location": "Zamalek, Cairo",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 45,
+    "amenities": [
+      "Fully Furnished",
+      "Daily Cleaning",
+      "WiFi",
+      "Security"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 34,
+    "title": "Green Building Apartment",
+    "description": "Eco-friendly 2-bedroom apartment with sustainable features",
+    "price": 2200,
+    "location": "New Cairo",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 100,
+    "amenities": [
+      "Solar Panels",
+      "Rainwater Harvesting",
+      "Garden",
+      "Security"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "available"
+  },
+  {
+    "id": 35,
+    "title": "Luxury Studio with Terrace",
+    "description": "Premium studio apartment with private terrace and city views",
+    "price": 2500,
+    "location": "Downtown Cairo",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 55,
+    "amenities": [
+      "Private Terrace",
+      "City Views",
+      "Concierge",
+      "Security"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop"
+    ],
+    "status": "rented"
+  }
+]
