@@ -4,14 +4,14 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/server.js"
+      "dest": "/api"
     }
   ],
   "env": {
     "NODE_ENV": "production"
   },
   "functions": {
-    "server.js": {
+    "api/index.js": {
       "maxDuration": 30
     }
   }
