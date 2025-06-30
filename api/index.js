@@ -7,26 +7,60 @@ module.exports = async (req, res) => {
     // Set CORS headers to allow requests from any origin
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET');
-    res.setHeader('Cache-Control', 's-maxage=86400, stale-while-revalidate'); // Cache for 1 day
+    res.setHeader('Cache-Control', 's-maxage=60, stale-while-revalidate'); // Cache for 1 minute
 
     try {
-        // --- 1. Parse Request URL ---
-        // Example URL: /api/users/1/posts?_sort=date&_limit=5
         const url = new URL(req.url, `http://${req.headers.host}`);
-        const pathParts = url.pathname.split('/').filter(p => p); // -> ['api', 'users', '1', 'posts']
+        const dataDir = path.join(process.cwd(), '_data');
+        
+        // --- NEW: Handle special routes first ---
+        
+        // Handle /api/health for health checks
+        if (url.pathname === '/api/health') {
+            return res.status(200).json({
+                status: 'ok',
+                timestamp: new Date().toISOString(),
+                region: process.env.VERCEL_REGION || 'local'
+            });
+        }
+        
+        // NEW: Handle /api/db to return all data combined
+        if (url.pathname === '/api/db') {
+            const files = await fs.readdir(dataDir);
+            const allData = {};
+            
+            for (const file of files) {
+                if (file.endsWith('.json')) {
+                    const resourceName = file.replace('.json', '');
+                    const filePath = path.join(dataDir, file);
+                    const fileContent = await fs.readFile(filePath, 'utf8');
+                    allData[resourceName] = JSON.parse(fileContent);
+                }
+            }
+            return res.status(200).json(allData);
+        }
+        
+        // Handle /api to list all available endpoints for the explorer
+        if (url.pathname === '/api' || url.pathname === '/api/') {
+            const files = await fs.readdir(dataDir);
+            const endpoints = files
+                .filter(file => file.endsWith('.json'))
+                .map(file => `/api/${file.replace('.json', '')}`);
+            return res.status(200).json({ endpoints });
+        }
 
-        // Check if it's a valid API request
+        // --- Existing logic for individual resources ---
+        const pathParts = url.pathname.split('/').filter(p => p);
+
         if (pathParts[0] !== 'api' || pathParts.length < 2) {
             return res.status(404).json({ error: 'Resource not found. Use /api/[resource]' });
         }
 
-        // --- 2. Determine Resources ---
-        let primaryResourceName = pathParts[1]; // -> 'users'
-        const primaryResourceId = !isNaN(pathParts[2]) ? parseInt(pathParts[2], 10) : null; // -> 1
-        const nestedResourceName = primaryResourceId ? pathParts[3] : null; // -> 'posts'
+        let primaryResourceName = pathParts[1];
+        const primaryResourceId = !isNaN(pathParts[2]) ? parseInt(pathParts[2], 10) : null;
+        const nestedResourceName = primaryResourceId ? pathParts[3] : null;
 
-        // --- 3. Load Data ---
-        const dataPath = path.join(process.cwd(), '_data', `${primaryResourceName}.json`);
+        const dataPath = path.join(dataDir, `${primaryResourceName}.json`);
         let data;
         try {
             const fileContent = await fs.readFile(dataPath, 'utf8');
@@ -37,9 +71,8 @@ module.exports = async (req, res) => {
         
         let result = [...data];
 
-        // --- 4. Handle Nested Resources (e.g., /users/1/posts) ---
         if (nestedResourceName) {
-            const nestedDataPath = path.join(process.cwd(), '_data', `${nestedResourceName}.json`);
+            const nestedDataPath = path.join(dataDir, `${nestedResourceName}.json`);
             let nestedData;
             try {
                 const nestedFileContent = await fs.readFile(nestedDataPath, 'utf8');
@@ -47,20 +80,15 @@ module.exports = async (req, res) => {
             } catch (error) {
                 return res.status(404).json({ error: `Nested resource '${nestedResourceName}' not found.` });
             }
-            // The foreign key is assumed to be `${primaryResourceNameSingular}Id`, e.g., 'userId'
             const foreignKey = `${primaryResourceName.slice(0, -1)}Id`;
             result = nestedData.filter(item => item[foreignKey] === primaryResourceId);
         } 
-        // --- 5. Handle Primary Resource ID (e.g., /users/1) ---
         else if (primaryResourceId) {
             const item = result.find(d => d.id === primaryResourceId);
             return item ? res.status(200).json(item) : res.status(404).json({ error: 'Item not found' });
         }
 
-        // --- 6. Handle Query Parameters (Filtering, Sorting, Searching, Pagination) ---
         const query = url.searchParams;
-
-        // Full-text search (q=...)
         const searchQuery = query.get('q');
         if (searchQuery) {
             const lowerCaseQuery = searchQuery.toLowerCase();
@@ -71,10 +99,8 @@ module.exports = async (req, res) => {
             );
         }
 
-        // Generic Filtering (e.g., categoryId=1, status=active)
         query.forEach((value, key) => {
             if (!key.startsWith('_') && key !== 'q') {
-                 // Handle numeric comparisons (gte, lte, ne)
                 if(key.endsWith('_gte')) {
                     const field = key.replace('_gte', '');
                     result = result.filter(item => item[field] >= parseFloat(value));
@@ -83,16 +109,14 @@ module.exports = async (req, res) => {
                     result = result.filter(item => item[field] <= parseFloat(value));
                 } else if(key.endsWith('_ne')) {
                      const field = key.replace('_ne', '');
-                    result = result.filter(item => item[field] != value);
+                    result = result.filter(item => String(item[key]) !== value);
                 }
-                // Handle exact match
                 else {
                     result = result.filter(item => String(item[key]) === value);
                 }
             }
         });
 
-        // Sorting (_sort=..., _order=...)
         const sortKey = query.get('_sort');
         if (sortKey) {
             const order = query.get('_order')?.toLowerCase() === 'desc' ? -1 : 1;
@@ -103,14 +127,12 @@ module.exports = async (req, res) => {
             });
         }
 
-        // Pagination (_page=..., _limit=...)
         const page = parseInt(query.get('_page'), 10) || 1;
-        const limit = parseInt(query.get('_limit'), 10) || result.length; // Default to all if no limit
+        const limit = parseInt(query.get('_limit'), 10) || result.length;
         const startIndex = (page - 1) * limit;
         const endIndex = page * limit;
         result = result.slice(startIndex, endIndex);
 
-        // --- 7. Send Response ---
         res.status(200).json(result);
 
     } catch (error) {
