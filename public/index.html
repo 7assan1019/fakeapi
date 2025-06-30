@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fake API - Learn REST APIs with Real Examples</title>
-    <meta name="description" content="A comprehensive mock REST API service for learning and development with 21 resources and 527+ realistic data items">
-    <meta name="keywords" content="fake api, mock api, rest api, json server, development, testing">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Fake API - Mock REST API for Testing</title>
     <style>
         * {
             margin: 0;
@@ -16,10 +12,11 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            color: #333;
         }
 
         .container {
@@ -37,296 +34,14 @@
         .header h1 {
             font-size: 3rem;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-weight: 700;
         }
 
         .header p {
             font-size: 1.2rem;
             opacity: 0.9;
-            margin-bottom: 20px;
         }
 
-        .header-nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-            flex-wrap: wrap;
-        }
-
-        .header-nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            border: 2px solid white;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-            font-weight: 500;
-        }
-
-        .header-nav a:hover {
-            background: white;
-            color: #667eea;
-        }
-
-        /* Quick Start Section */
-        .quick-start {
-            background: white;
-            border-radius: 15px;
-            padding: 40px;
-            margin-bottom: 40px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-        }
-
-        .quick-start h2 {
-            color: #333;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .quick-start p {
-            color: #666;
-            font-size: 1.1rem;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .example-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin-bottom: 30px;
-        }
-
-        .code-block {
-            background: #1e1e1e;
-            border-radius: 10px;
-            padding: 20px;
-            position: relative;
-        }
-
-        .code-block h4 {
-            color: #fff;
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-        }
-
-        .code-block pre {
-            color: #d4d4d4;
-            font-family: 'Courier New', monospace;
-            font-size: 0.9rem;
-            line-height: 1.5;
-            overflow-x: auto;
-        }
-
-        .copy-btn {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background: #667eea;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 0.8rem;
-            transition: background 0.3s ease;
-        }
-
-        .copy-btn:hover {
-            background: #5a6fd8;
-        }
-
-        /* Categories Section */
-        .categories {
-            background: white;
-            border-radius: 15px;
-            padding: 40px;
-            margin-bottom: 40px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-        }
-
-        .categories h2 {
-            color: #333;
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .category-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-
-        .category-card {
-            background: #f8f9fa;
-            border: 2px solid #e9ecef;
-            border-radius: 10px;
-            padding: 25px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-
-        .category-card:hover {
-            border-color: #667eea;
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
-        }
-
-        .category-card.active {
-            border-color: #667eea;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        .category-card i {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            color: #667eea;
-        }
-
-        .category-card.active i {
-            color: white;
-        }
-
-        .category-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-        }
-
-        .category-card p {
-            color: #666;
-            font-size: 0.9rem;
-        }
-
-        .category-card.active p {
-            color: rgba(255,255,255,0.9);
-        }
-
-        /* Examples Section */
-        .examples-section {
-            background: white;
-            border-radius: 15px;
-            padding: 40px;
-            margin-bottom: 40px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-        }
-
-        .examples-section h2 {
-            color: #333;
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .example-tabs {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-
-        .tab-btn {
-            background: #f8f9fa;
-            border: 2px solid #e9ecef;
-            border-radius: 25px;
-            padding: 10px 20px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: 500;
-        }
-
-        .tab-btn:hover {
-            border-color: #667eea;
-            background: #667eea;
-            color: white;
-        }
-
-        .tab-btn.active {
-            background: #667eea;
-            color: white;
-            border-color: #667eea;
-        }
-
-        .example-content {
-            display: none;
-        }
-
-        .example-content.active {
-            display: block;
-        }
-
-        .example-item {
-            background: #f8f9fa;
-            border-radius: 10px;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-left: 4px solid #667eea;
-        }
-
-        .example-item h4 {
-            color: #333;
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-        }
-
-        .example-item p {
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-        .example-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        /* Advanced Features */
-        .advanced-features {
-            background: white;
-            border-radius: 15px;
-            padding: 40px;
-            margin-bottom: 40px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-        }
-
-        .advanced-features h2 {
-            color: #333;
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 25px;
-        }
-
-        .feature-card {
-            background: #f8f9fa;
-            border-radius: 10px;
-            padding: 25px;
-            border-left: 4px solid #667eea;
-        }
-
-        .feature-card h4 {
-            color: #333;
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-        }
-
-        .feature-card p {
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-        /* Stats Section */
         .stats {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -336,98 +51,153 @@
 
         .stat-card {
             background: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            padding: 20px;
+            border-radius: 10px;
             text-align: center;
-            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .stat-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .stat-card i {
-            font-size: 2.5rem;
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
             color: #667eea;
-            margin-bottom: 15px;
         }
 
-        .stat-card h3 {
-            font-size: 2.5rem;
+        .stat-label {
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .examples {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .examples h2 {
             color: #333;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .example-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .example-card {
+            border: 1px solid #e1e5e9;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .example-header {
+            background: #f8f9fa;
+            padding: 15px;
+            border-bottom: 1px solid #e1e5e9;
+        }
+
+        .example-method {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .example-url {
+            font-family: 'Monaco', 'Menlo', monospace;
+            color: #495057;
+        }
+
+        .example-body {
+            padding: 15px;
+        }
+
+        .example-description {
+            color: #666;
             margin-bottom: 10px;
         }
 
-        .stat-card p {
-            color: #666;
-            font-size: 1.1rem;
+        .example-response {
+            background: #f8f9fa;
+            border: 1px solid #e1e5e9;
+            border-radius: 4px;
+            padding: 10px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.9rem;
+            color: #495057;
+            max-height: 150px;
+            overflow-y: auto;
         }
 
-        /* Footer */
+        .endpoints {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .endpoints h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .endpoint-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .endpoint-item {
+            background: #f8f9fa;
+            border: 1px solid #e1e5e9;
+            border-radius: 6px;
+            padding: 15px;
+            transition: all 0.2s ease;
+        }
+
+        .endpoint-item:hover {
+            border-color: #667eea;
+            box-shadow: 0 2px 4px rgba(102, 126, 234, 0.1);
+        }
+
+        .endpoint-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .endpoint-count {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
         .footer {
             text-align: center;
             color: white;
             margin-top: 40px;
-            padding: 30px;
-            opacity: 0.9;
+            opacity: 0.8;
         }
 
-        .footer p {
-            margin-bottom: 10px;
-        }
-
-        /* Responsive */
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2rem;
             }
             
             .container {
-                padding: 10px;
+                padding: 15px;
             }
             
-            .example-container {
-                grid-template-columns: 1fr;
-            }
-
-            .example-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .header-nav {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .stats {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .feature-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .quick-start, .categories, .examples-section, .advanced-features {
+            .examples, .endpoints {
                 padding: 20px;
-            }
-
-            .quick-start h2, .categories h2, .examples-section h2, .advanced-features h2 {
-                font-size: 2rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .header h1 {
-                font-size: 1.8rem;
-            }
-
-            .stats {
-                grid-template-columns: 1fr;
-            }
-
-            .category-grid {
-                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -435,538 +205,223 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1><i class="fas fa-cube"></i> Fake API</h1>
-            <p>Learn REST APIs with real examples and rich, realistic data</p>
-            <div class="header-nav">
-                <a href="/docs.html"><i class="fas fa-book"></i> Full Documentation</a>
-                <a href="/api"><i class="fas fa-code"></i> API Explorer</a>
-                <a href="/health"><i class="fas fa-heartbeat"></i> Health Check</a>
-            </div>
+            <h1>🚀 Fake API</h1>
+            <p>A comprehensive mock REST API for testing and learning</p>
         </div>
 
-        <!-- Quick Start Section -->
-        <div class="quick-start">
-            <h2>🚀 Quick Start</h2>
-            <p>Try this simple example to get started with our API</p>
-            
-            <div class="example-container">
-                <div class="code-block">
-                    <button class="copy-btn" onclick="copyToClipboard('quickRequest')">Copy</button>
-                    <h4>Request</h4>
-                    <pre id="quickRequest">fetch('http://localhost:3000/api/users/1')
-  .then(response => response.json())
-  .then(json => console.log(json))</pre>
-                </div>
-                <div class="code-block">
-                    <button class="copy-btn" onclick="copyToClipboard('quickResponse')">Copy</button>
-                    <h4>Response</h4>
-                    <pre id="quickResponse">{
-  "id": 1,
-  "name": "Ahmed Hassan",
-  "username": "ahmed_hassan",
-  "email": "ahmed.hassan@email.com",
-  "avatar": "https://images.unsplash.com/...",
-  "address": {
-    "street": "123 Main Street",
-    "city": "Cairo",
-    "zipcode": "11511"
-  }
-}</pre>
-                </div>
-            </div>
-        </div>
-
-        <!-- Stats Section -->
         <div class="stats">
             <div class="stat-card">
-                <i class="fas fa-layer-group"></i>
-                <h3>21</h3>
-                <p>Resources</p>
+                <div class="stat-number">21</div>
+                <div class="stat-label">API Endpoints</div>
             </div>
             <div class="stat-card">
-                <i class="fas fa-database"></i>
-                <h3>527+</h3>
-                <p>Data Items</p>
+                <div class="stat-number">527+</div>
+                <div class="stat-label">Mock Items</div>
             </div>
             <div class="stat-card">
-                <i class="fas fa-code"></i>
-                <h3>100%</h3>
-                <p>Free to Use</p>
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Static & Fast</div>
             </div>
             <div class="stat-card">
-                <i class="fas fa-rocket"></i>
-                <h3>v1.0</h3>
-                <p>API Version</p>
+                <div class="stat-number">0</div>
+                <div class="stat-label">Server Setup</div>
             </div>
         </div>
 
-        <!-- Categories Section -->
-        <div class="categories">
-            <h2>📚 Explore by Category</h2>
-            <p style="text-align: center; color: #666; margin-bottom: 30px;">Click on a category to see relevant examples</p>
-            
-            <div class="category-grid">
-                <div class="category-card" onclick="showCategory('ecommerce')">
-                    <i class="fas fa-shopping-cart"></i>
-                    <h3>E-commerce</h3>
-                    <p>Products, orders, reviews</p>
+        <div class="examples">
+            <h2>📋 Example API Calls</h2>
+            <div class="example-grid">
+                <div class="example-card">
+                    <div class="example-header">
+                        <span class="example-method">GET</span>
+                        <span class="example-url">/api/users</span>
+                    </div>
+                    <div class="example-body">
+                        <div class="example-description">Get all users with pagination</div>
+                        <div class="example-response">[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@example.com",
+    "role": "admin"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith", 
+    "email": "jane@example.com",
+    "role": "user"
+  }
+]</div>
+                    </div>
                 </div>
-                <div class="category-card" onclick="showCategory('social')">
-                    <i class="fas fa-users"></i>
-                    <h3>Social Media</h3>
-                    <p>Users, posts, comments</p>
-                </div>
-                <div class="category-card" onclick="showCategory('realestate')">
-                    <i class="fas fa-home"></i>
-                    <h3>Real Estate</h3>
-                    <p>Apartments, hotels, restaurants</p>
-                </div>
-                <div class="category-card" onclick="showCategory('business')">
-                    <i class="fas fa-building"></i>
-                    <h3>Business</h3>
-                    <p>Companies, jobs, services</p>
-                </div>
-                <div class="category-card" onclick="showCategory('education')">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Education</h3>
-                    <p>Schools, books, events</p>
-                </div>
-                <div class="category-card" onclick="showCategory('healthcare')">
-                    <i class="fas fa-heartbeat"></i>
-                    <h3>Healthcare</h3>
-                    <p>Hospitals, cars, pets</p>
-                </div>
-            </div>
 
-            <!-- Category Examples -->
-            <div id="categoryExamples" style="display: none;">
-                <h3 id="categoryTitle" style="margin-bottom: 20px; color: #333;"></h3>
-                <div id="categoryContent"></div>
+                <div class="example-card">
+                    <div class="example-header">
+                        <span class="example-method">GET</span>
+                        <span class="example-url">/api/products?q=laptop</span>
+                    </div>
+                    <div class="example-body">
+                        <div class="example-description">Search products by keyword</div>
+                        <div class="example-response">[
+  {
+    "id": 1,
+    "name": "MacBook Pro",
+    "price": 1299.99,
+    "category": "laptop"
+  },
+  {
+    "id": 2,
+    "name": "Dell XPS 13",
+    "price": 999.99,
+    "category": "laptop"
+  }
+]</div>
+                    </div>
+                </div>
+
+                <div class="example-card">
+                    <div class="example-header">
+                        <span class="example-method">GET</span>
+                        <span class="example-url">/api/hotels?stars=5</span>
+                    </div>
+                    <div class="example-body">
+                        <div class="example-description">Filter hotels by rating</div>
+                        <div class="example-response">[
+  {
+    "id": 1,
+    "name": "Grand Hotel",
+    "stars": 5,
+    "price": 299.99
+  },
+  {
+    "id": 2,
+    "name": "Luxury Resort",
+    "stars": 5,
+    "price": 399.99
+  }
+]</div>
+                    </div>
+                </div>
+
+                <div class="example-card">
+                    <div class="example-header">
+                        <span class="example-method">GET</span>
+                        <span class="example-url">/api/jobs?_sort=salary&_order=desc</span>
+                    </div>
+                    <div class="example-body">
+                        <div class="example-description">Sort jobs by salary (highest first)</div>
+                        <div class="example-response">[
+  {
+    "id": 1,
+    "title": "Senior Developer",
+    "salary": 120000,
+    "company": "Tech Corp"
+  },
+  {
+    "id": 2,
+    "title": "Product Manager",
+    "salary": 110000,
+    "company": "Startup Inc"
+  }
+]</div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Advanced Features -->
-        <div class="advanced-features">
-            <h2>⚡ Advanced Features</h2>
-            <p style="text-align: center; color: #666; margin-bottom: 30px;">Discover the power of our API with these advanced capabilities</p>
-            
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h4><i class="fas fa-filter"></i> Filtering</h4>
-                    <p>Filter data by any field with various operators</p>
-                    <div class="code-block">
-                        <button class="copy-btn" onclick="copyToClipboard('filterExample')">Copy</button>
-                        <pre id="filterExample">GET http://localhost:3000/api/hotels?stars=5&price_lte=200
-
-GET http://localhost:3000/api/products?rating_gte=4.5
-
-GET http://localhost:3000/api/users?address.city=Cairo</pre>
-                    </div>
+        <div class="endpoints">
+            <h2>🔗 Available Endpoints</h2>
+            <div class="endpoint-list">
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Users</div>
+                    <div class="endpoint-count">25 items</div>
                 </div>
-
-                <div class="feature-card">
-                    <h4><i class="fas fa-sort"></i> Sorting</h4>
-                    <p>Sort results by any field in ascending or descending order</p>
-                    <div class="code-block">
-                        <button class="copy-btn" onclick="copyToClipboard('sortExample')">Copy</button>
-                        <pre id="sortExample">GET http://localhost:3000/api/products?_sort=price&_order=asc
-
-GET http://localhost:3000/api/jobs?_sort=salary&_order=desc
-
-GET http://localhost:3000/api/hotels?_sort=rating&_order=desc</pre>
-                    </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Products</div>
+                    <div class="endpoint-count">30 items</div>
                 </div>
-
-                <div class="feature-card">
-                    <h4><i class="fas fa-search"></i> Search</h4>
-                    <p>Full-text search across all text fields</p>
-                    <div class="code-block">
-                        <button class="copy-btn" onclick="copyToClipboard('searchExample')">Copy</button>
-                        <pre id="searchExample">GET http://localhost:3000/api/products?q=laptop
-
-GET http://localhost:3000/api/hotels?q=resort
-
-GET http://localhost:3000/api/jobs?q=developer</pre>
-                    </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Hotels</div>
+                    <div class="endpoint-count">20 items</div>
                 </div>
-
-                <div class="feature-card">
-                    <h4><i class="fas fa-list-ol"></i> Pagination</h4>
-                    <p>Control the number of results and navigate pages</p>
-                    <div class="code-block">
-                        <button class="copy-btn" onclick="copyToClipboard('paginationExample')">Copy</button>
-                        <pre id="paginationExample">GET http://localhost:3000/api/users?_page=1&_limit=10
-
-GET http://localhost:3000/api/products?_start=20&_limit=5
-
-GET http://localhost:3000/api/hotels?_page=2&_limit=15</pre>
-                    </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Jobs</div>
+                    <div class="endpoint-count">35 items</div>
                 </div>
-
-                <div class="feature-card">
-                    <h4><i class="fas fa-link"></i> Nested Routes</h4>
-                    <p>Access related data through nested endpoints</p>
-                    <div class="code-block">
-                        <button class="copy-btn" onclick="copyToClipboard('nestedExample')">Copy</button>
-                        <pre id="nestedExample">GET http://localhost:3000/api/posts/1/comments
-
-GET http://localhost:3000/api/users/1/posts
-
-GET http://localhost:3000/api/products/1/reviews</pre>
-                    </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Posts</div>
+                    <div class="endpoint-count">100 items</div>
                 </div>
-
-                <div class="feature-card">
-                    <h4><i class="fas fa-magic"></i> Complex Queries</h4>
-                    <p>Combine multiple features for powerful queries</p>
-                    <div class="code-block">
-                        <button class="copy-btn" onclick="copyToClipboard('complexExample')">Copy</button>
-                        <pre id="complexExample">GET http://localhost:3000/api/apartments?bedrooms_gte=2&price_lte=2000&_sort=price&_order=asc&_page=1&_limit=10
-
-GET http://localhost:3000/api/hotels?stars=5&amenities_like=Pool&_sort=rating&_order=desc</pre>
-                    </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Comments</div>
+                    <div class="endpoint-count">500 items</div>
+                </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Companies</div>
+                    <div class="endpoint-count">15 items</div>
+                </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Services</div>
+                    <div class="endpoint-count">25 items</div>
+                </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Apartments</div>
+                    <div class="endpoint-count">40 items</div>
+                </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Restaurants</div>
+                    <div class="endpoint-count">30 items</div>
+                </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Schools</div>
+                    <div class="endpoint-count">20 items</div>
+                </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Books</div>
+                    <div class="endpoint-count">50 items</div>
+                </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Events</div>
+                    <div class="endpoint-count">25 items</div>
+                </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Hospitals</div>
+                    <div class="endpoint-count">15 items</div>
+                </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Cars</div>
+                    <div class="endpoint-count">30 items</div>
+                </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Pets</div>
+                    <div class="endpoint-count">20 items</div>
+                </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Orders</div>
+                    <div class="endpoint-count">100 items</div>
+                </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Reviews</div>
+                    <div class="endpoint-count">200 items</div>
+                </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Tickets</div>
+                    <div class="endpoint-count">75 items</div>
+                </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Invoices</div>
+                    <div class="endpoint-count">50 items</div>
+                </div>
+                <div class="endpoint-item">
+                    <div class="endpoint-name">Projects</div>
+                    <div class="endpoint-count">25 items</div>
                 </div>
             </div>
         </div>
 
         <div class="footer">
-            <p>&copy; 2024 Fake API. Built with ❤️ for the developer community</p>
-            <p>Free to use • No authentication required • Perfect for learning</p>
+            <p>✨ Simple, fast, and reliable mock API for testing and learning</p>
         </div>
     </div>
-
-    <script>
-        // Copy to clipboard function
-        function copyToClipboard(elementId) {
-            const element = document.getElementById(elementId);
-            const text = element.textContent || element.innerText;
-            
-            navigator.clipboard.writeText(text).then(() => {
-                const button = event.target;
-                const originalText = button.textContent;
-                button.textContent = 'Copied!';
-                button.style.background = '#28a745';
-                
-                setTimeout(() => {
-                    button.textContent = originalText;
-                    button.style.background = '#667eea';
-                }, 2000);
-            }).catch(err => {
-                console.error('Failed to copy: ', err);
-            });
-        }
-
-        // Category examples data
-        const categoryExamples = {
-            ecommerce: {
-                title: "🛒 E-commerce Examples",
-                examples: [
-                    {
-                        title: "Get All Products",
-                        description: "Retrieve all available products",
-                        request: "GET http://localhost:3000/api/products",
-                        response: `[
-  {
-    "id": 1,
-    "name": "Wireless Bluetooth Headphones",
-    "price": 199.99,
-    "category": "Electronics",
-    "rating": 4.5,
-    "stock": 50
-  }
-]`
-                    },
-                    {
-                        title: "Get Product Reviews",
-                        description: "Get reviews for a specific product",
-                        request: "GET http://localhost:3000/api/products/1/reviews",
-                        response: `[
-  {
-    "id": 1,
-    "productId": 1,
-    "userId": 1,
-    "rating": 5,
-    "comment": "Excellent quality!"
-  }
-]`
-                    },
-                    {
-                        title: "Filter by Price Range",
-                        description: "Find products within a price range",
-                        request: "GET http://localhost:3000/api/products?price_gte=100&price_lte=500",
-                        response: "Returns products between $100-$500"
-                    }
-                ]
-            },
-            social: {
-                title: "👥 Social Media Examples",
-                examples: [
-                    {
-                        title: "Get All Users",
-                        description: "Retrieve user profiles",
-                        request: "GET http://localhost:3000/api/users",
-                        response: `[
-  {
-    "id": 1,
-    "name": "Ahmed Hassan",
-    "username": "ahmed_hassan",
-    "email": "ahmed.hassan@email.com"
-  }
-]`
-                    },
-                    {
-                        title: "Get User Posts",
-                        description: "Get posts by a specific user",
-                        request: "GET http://localhost:3000/api/users/1/posts",
-                        response: `[
-  {
-    "id": 1,
-    "userId": 1,
-    "title": "My First Post",
-    "body": "Hello world!"
-  }
-]`
-                    },
-                    {
-                        title: "Get Post Comments",
-                        description: "Get comments for a specific post",
-                        request: "GET http://localhost:3000/api/posts/1/comments",
-                        response: `[
-  {
-    "id": 1,
-    "postId": 1,
-    "userId": 2,
-    "body": "Great post!"
-  }
-]`
-                    }
-                ]
-            },
-            realestate: {
-                title: "🏠 Real Estate Examples",
-                examples: [
-                    {
-                        title: "Get All Hotels",
-                        description: "Retrieve hotel listings",
-                        request: "GET http://localhost:3000/api/hotels",
-                        response: `[
-  {
-    "id": 1,
-    "name": "Nile Palace Hotel",
-    "stars": 5,
-    "rating": 4.8,
-    "price_range": "$$$$"
-  }
-]`
-                    },
-                    {
-                        title: "Filter 5-Star Hotels",
-                        description: "Find luxury hotels",
-                        request: "GET http://localhost:3000/api/hotels?stars=5",
-                        response: "Returns only 5-star hotels"
-                    },
-                    {
-                        title: "Search Apartments",
-                        description: "Find apartments with specific criteria",
-                        request: "GET http://localhost:3000/api/apartments?bedrooms_gte=2&price_lte=2000",
-                        response: "Returns 2+ bedroom apartments under $2000"
-                    }
-                ]
-            },
-            business: {
-                title: "🏢 Business Examples",
-                examples: [
-                    {
-                        title: "Get All Companies",
-                        description: "Retrieve company profiles",
-                        request: "GET http://localhost:3000/api/companies",
-                        response: `[
-  {
-    "id": 1,
-    "name": "TechCorp Solutions",
-    "industry": "Technology",
-    "size": "500-1000"
-  }
-]`
-                    },
-                    {
-                        title: "Get Job Listings",
-                        description: "Find available jobs",
-                        request: "GET http://localhost:3000/api/jobs",
-                        response: `[
-  {
-    "id": 1,
-    "title": "Software Developer",
-    "company": "TechCorp",
-    "salary": "$8000-12000"
-  }
-]`
-                    },
-                    {
-                        title: "Sort Jobs by Salary",
-                        description: "Find highest paying jobs",
-                        request: "GET http://localhost:3000/api/jobs?_sort=salary&_order=desc",
-                        response: "Returns jobs sorted by salary (highest first)"
-                    }
-                ]
-            },
-            education: {
-                title: "🎓 Education Examples",
-                examples: [
-                    {
-                        title: "Get All Schools",
-                        description: "Retrieve educational institutions",
-                        request: "GET http://localhost:3000/api/schools",
-                        response: `[
-  {
-    "id": 1,
-    "name": "Cairo University",
-    "type": "University",
-    "location": "Cairo"
-  }
-]`
-                    },
-                    {
-                        title: "Get Books",
-                        description: "Browse book catalog",
-                        request: "GET http://localhost:3000/api/books",
-                        response: `[
-  {
-    "id": 1,
-    "title": "The Art of Programming",
-    "author": "John Doe",
-    "genre": "Technology"
-  }
-]`
-                    },
-                    {
-                        title: "Get Events",
-                        description: "Find educational events",
-                        request: "GET http://localhost:3000/api/events",
-                        response: `[
-  {
-    "id": 1,
-    "title": "Tech Conference 2024",
-    "date": "2024-07-15",
-    "location": "Cairo"
-  }
-]`
-                    }
-                ]
-            },
-            healthcare: {
-                title: "🏥 Healthcare Examples",
-                examples: [
-                    {
-                        title: "Get All Hospitals",
-                        description: "Retrieve healthcare facilities",
-                        request: "GET http://localhost:3000/api/hospitals",
-                        response: `[
-  {
-    "id": 1,
-    "name": "Cairo Medical Center",
-    "type": "General Hospital",
-    "rating": 4.7
-  }
-]`
-                    },
-                    {
-                        title: "Get Cars",
-                        description: "Browse vehicle listings",
-                        request: "GET http://localhost:3000/api/cars",
-                        response: `[
-  {
-    "id": 1,
-    "brand": "Toyota",
-    "model": "Camry",
-    "year": 2022,
-    "price": 25000
-  }
-]`
-                    },
-                    {
-                        title: "Get Pets",
-                        description: "Find pet profiles",
-                        request: "GET http://localhost:3000/api/pets",
-                        response: `[
-  {
-    "id": 1,
-    "name": "Max",
-    "type": "Dog",
-    "breed": "Golden Retriever"
-  }
-]`
-                    }
-                ]
-            }
-        };
-
-        // Show category examples
-        function showCategory(category) {
-            // Update active category card
-            document.querySelectorAll('.category-card').forEach(card => {
-                card.classList.remove('active');
-            });
-            event.currentTarget.classList.add('active');
-
-            // Show examples
-            const examples = categoryExamples[category];
-            const container = document.getElementById('categoryExamples');
-            const title = document.getElementById('categoryTitle');
-            const content = document.getElementById('categoryContent');
-
-            title.textContent = examples.title;
-            content.innerHTML = '';
-
-            examples.examples.forEach(example => {
-                const exampleDiv = document.createElement('div');
-                exampleDiv.className = 'example-item';
-                exampleDiv.innerHTML = `
-                    <h4>${example.title}</h4>
-                    <p>${example.description}</p>
-                    <div class="example-grid">
-                        <div class="code-block">
-                            <button class="copy-btn" onclick="copyToClipboard('req_${example.title.replace(/\s+/g, '_')}')">Copy</button>
-                            <h4>Request</h4>
-                            <pre id="req_${example.title.replace(/\s+/g, '_')}">${example.request}</pre>
-                        </div>
-                        <div class="code-block">
-                            <button class="copy-btn" onclick="copyToClipboard('res_${example.title.replace(/\s+/g, '_')}')">Copy</button>
-                            <h4>Response</h4>
-                            <pre id="res_${example.title.replace(/\s+/g, '_')}">${example.response}</pre>
-                        </div>
-                    </div>
-                `;
-                content.appendChild(exampleDiv);
-            });
-
-            container.style.display = 'block';
-            container.scrollIntoView({ behavior: 'smooth' });
-        }
-
-        // Update base URL in examples
-        function updateBaseUrl() {
-            const baseUrl = window.location.protocol + '//' + window.location.host;
-            
-            // Update quick start example
-            const quickRequest = document.getElementById('quickRequest');
-            quickRequest.textContent = quickRequest.textContent.replace(
-                /https?:\/\/[^\/]+/,
-                baseUrl
-            );
-            
-            // Update all example URLs in category examples
-            Object.keys(categoryExamples).forEach(category => {
-                categoryExamples[category].examples.forEach(example => {
-                    if (example.request && example.request.includes('localhost')) {
-                        example.request = example.request.replace('http://localhost:3000', baseUrl);
-                    }
-                });
-            });
-        }
-
-        // Initialize
-        document.addEventListener('DOMContentLoaded', updateBaseUrl);
-    </script>
 </body>
 </html> 

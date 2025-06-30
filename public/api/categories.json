@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Electronics",
+    "description": "Latest electronic devices and gadgets",
+    "image": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=400&h=300&fit=crop"
+  },
+  {
+    "id": 2,
+    "name": "Clothing",
+    "description": "Fashion and apparel for all occasions",
+    "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop"
+  },
+  {
+    "id": 3,
+    "name": "Home & Garden",
+    "description": "Everything for your home and outdoor spaces",
+    "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=300&fit=crop"
+  },
+  {
+    "id": 4,
+    "name": "Sports & Fitness",
+    "description": "Equipment and gear for active lifestyles",
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
+  },
+  {
+    "id": 5,
+    "name": "Books & Education",
+    "description": "Knowledge and learning resources",
+    "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop"
+  },
+  {
+    "id": 6,
+    "name": "Automotive",
+    "description": "Car parts, accessories, and maintenance",
+    "image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&h=300&fit=crop"
+  },
+  {
+    "id": 7,
+    "name": "Health & Beauty",
+    "description": "Personal care and wellness products",
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=300&fit=crop"
+  },
+  {
+    "id": 8,
+    "name": "Toys & Games",
+    "description": "Entertainment for all ages",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop"
+  }
+]
