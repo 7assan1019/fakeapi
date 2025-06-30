@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake API - Documentation</title>
+    <meta name="description" content="A comprehensive mock REST API for learning and development. 21 resources, 527+ realistic items. Free, public, and easy to use.">
+    <meta name="keywords" content="fake api, mock api, rest api, json server, development, testing">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .logo i {
+            margin-right: 12px;
+            font-size: 2.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-1px);
+        }
+
+        /* Main Layout */
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 2rem;
+            min-height: calc(100vh - 200px);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            height: fit-content;
+            position: sticky;
+            top: 2rem;
+        }
+
+        .sidebar h3 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 0.3rem;
+        }
+
+        .sidebar a {
+            color: #555;
+            text-decoration: none;
+            padding: 0.7rem 1rem;
+            display: block;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            border-left: 3px solid transparent;
+        }
+
+        .sidebar a:hover {
+            color: #667eea;
+            background: #f8f9ff;
+            border-left-color: #667eea;
+            transform: translateX(5px);
+        }
+
+        /* Content */
+        .content {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .section {
+            margin-bottom: 3.5rem;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section h2 {
+            color: #333;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #667eea;
+            font-weight: 700;
+        }
+
+        .section h3 {
+            color: #667eea;
+            font-size: 1.6rem;
+            margin: 2.5rem 0 1rem 0;
+            font-weight: 600;
+        }
+
+        .section p {
+            margin-bottom: 1.2rem;
+            color: #555;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        /* Code blocks */
+        .code-block {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 1.8rem;
+            margin: 1.5rem 0;
+            font-family: 'Courier New', monospace;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .code-block pre {
+            margin: 0;
+            white-space: pre-wrap;
+            color: #e0e0e0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .code-block .method {
+            background: #28a745;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 12px;
+            font-weight: bold;
+        }
+
+        .code-block .url {
+            color: #4dabf7;
+            font-weight: bold;
+        }
+
+        .code-block .description {
+            color: #888;
+            margin-top: 0.8rem;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+        /* Examples */
+        .example-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .example-card {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 1.5rem;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .example-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .example-card h4 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .example-card code {
+            background: #e9ecef;
+            padding: 0.4rem 0.8rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            color: #333;
+            word-break: break-all;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .example-card p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Tables */
+        .table-container {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 1.2rem;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        th {
+            background: #667eea;
+            color: white;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        /* Alerts */
+        .alert {
+            padding: 1.2rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            border-left: 4px solid;
+            font-weight: 500;
+        }
+
+        .alert-info {
+            background: #d1ecf1;
+            border-color: #17a2b8;
+            color: #0c5460;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+        }
+
+        .alert-warning {
+            background: #fff3cd;
+            border-color: #ffc107;
+            color: #856404;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .footer p {
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+        }
+
+        /* Copy button */
+        .copy-btn {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .copy-btn:hover {
+            background: #5a6fd8;
+            transform: scale(1.05);
+        }
+
+        /* Resource badges */
+        .resource-badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin: 0.2rem;
+            font-weight: 500;
+        }
+
+        /* Request/Response pairs */
+        .request-response {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .request-block, .response-block {
+            background: #1a1a1a;
+            border-radius: 10px;
+            padding: 1.8rem;
+            position: relative;
+        }
+
+        .request-block h4, .response-block h4 {
+            color: #fff;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .request-block pre, .response-block pre {
+            color: #e0e0e0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            overflow-x: auto;
+        }
+
+        /* Lists */
+        .section ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .section li {
+            margin-bottom: 0.8rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .main-container {
+                grid-template-columns: 240px 1fr;
+                gap: 1.5rem;
+                padding: 1.5rem 1rem;
+            }
+            
+            .content {
+                padding: 2rem;
+            }
+
+            .sidebar {
+                padding: 1.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-container {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+
+            .sidebar {
+                position: static;
+                margin-bottom: 1.5rem;
+                order: -1;
+            }
+
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .logo i {
+                font-size: 1.8rem;
+            }
+
+            .section h2 {
+                font-size: 1.8rem;
+            }
+
+            .section h3 {
+                font-size: 1.4rem;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
+
+            .request-response {
+                grid-template-columns: 1fr;
+            }
+
+            .example-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .code-block {
+                padding: 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .table-container {
+                font-size: 0.9rem;
+            }
+
+            th, td {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 1rem 0;
+            }
+
+            .main-container {
+                padding: 0.5rem;
+            }
+
+            .content {
+                padding: 1rem;
+            }
+
+            .section {
+                margin-bottom: 2.5rem;
+            }
+
+            .section h2 {
+                font-size: 1.6rem;
+            }
+
+            .section h3 {
+                font-size: 1.3rem;
+            }
+
+            .code-block {
+                padding: 1.2rem;
+                font-size: 0.85rem;
+            }
+
+            .example-card {
+                padding: 1.2rem;
+            }
+
+            .request-block, .response-block {
+                padding: 1.2rem;
+            }
+
+            .nav-links {
+                gap: 0.8rem;
+            }
+
+            .nav-links a {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.9rem;
+            }
+
+            .sidebar {
+                padding: 1rem;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Focus styles for accessibility */
+        .sidebar a:focus,
+        .nav-links a:focus,
+        .copy-btn:focus {
+            outline: 2px solid #667eea;
+            outline-offset: 2px;
+        }
+
+        /* Code word wrapping */
+        code {
+            word-break: break-all;
+            white-space: pre-wrap;
+        }
+
+        /* Better table responsiveness */
+        @media (max-width: 600px) {
+            table {
+                font-size: 0.8rem;
+            }
+            
+            th, td {
+                padding: 0.8rem;
+            }
+            
+            .resource-badge {
+                font-size: 0.7rem;
+                padding: 0.3rem 0.7rem;
+            }
+        }
+
+        /* Loading animation for copy button */
+        .copy-btn.copied {
+            background: #28a745 !important;
+            animation: pulse 0.3s ease;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-cube"></i>
+                Fake API
+            </div>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="/docs.html">Documentation</a>
+                <a href="/api">API</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <h3>Quick Navigation</h3>
+            <ul>
+                <li><a href="#getting-started">Getting Started</a></li>
+                <li><a href="#endpoints">API Endpoints</a></li>
+                <li><a href="#authentication">Authentication</a></li>
+                <li><a href="#querying">Querying Data</a></li>
+                <li><a href="#filtering">Filtering</a></li>
+                <li><a href="#pagination">Pagination</a></li>
+                <li><a href="#sorting">Sorting</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#resources">Available Resources</a></li>
+                <li><a href="#error-handling">Error Handling</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="section" id="getting-started">
+                <h2>Getting Started</h2>
+                <p>Welcome to Fake API! This is a free, public REST API service designed to help developers build and test their applications with realistic data.</p>
+                
+                <div class="alert alert-info">
+                    <strong>Base URL:</strong> <code id="baseUrl">http://localhost:3000/api</code>
+                    <button class="copy-btn" onclick="copyToClipboard('baseUrl')">Copy</button>
+                </div>
+
+                <h3>What is Fake API?</h3>
+                <p>Fake API provides 21 different resources with over 500 realistic data items. It's perfect for:</p>
+                <ul>
+                    <li>Frontend development and testing</li>
+                    <li>Learning REST APIs</li>
+                    <li>Prototyping applications</li>
+                    <li>API integration testing</li>
+                </ul>
+
+                <h3>Quick Example</h3>
+                <div class="request-response">
+                    <div class="request-block">
+                        <button class="copy-btn" onclick="copyToClipboard('quickRequest')">Copy</button>
+                        <h4>Request</h4>
+                        <pre id="quickRequest">fetch('http://localhost:3000/api/users/1')
+  .then(response => response.json())
+  .then(json => console.log(json))</pre>
+                    </div>
+                    <div class="response-block">
+                        <button class="copy-btn" onclick="copyToClipboard('quickResponse')">Copy</button>
+                        <h4>Response</h4>
+                        <pre id="quickResponse">{
+  "id": 1,
+  "name": "Ahmed Hassan",
+  "username": "ahmed_hassan",
+  "email": "ahmed.hassan@email.com",
+  "avatar": "https://images.unsplash.com/...",
+  "address": {
+    "street": "123 Main Street",
+    "city": "Cairo",
+    "zipcode": "11511"
+  }
+}</pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="endpoints">
+                <h2>API Endpoints</h2>
+                <p>All endpoints support standard HTTP methods: GET, POST, PUT, DELETE, and PATCH.</p>
+
+                <h3>Core Endpoints</h3>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyToClipboard('coreEndpoints')">Copy</button>
+                    <pre id="coreEndpoints"><span class="method">GET</span><span class="url">http://localhost:3000/api</span>
+<span class="description">API information and available endpoints</span>
+
+<span class="method">GET</span><span class="url">http://localhost:3000/health</span>
+<span class="description">Server health check</span>
+
+<span class="method">GET</span><span class="url">http://localhost:3000/api/users</span>
+<span class="description">Get all users</span>
+
+<span class="method">GET</span><span class="url">http://localhost:3000/api/users/1</span>
+<span class="description">Get user by ID</span>
+
+<span class="method">POST</span><span class="url">http://localhost:3000/api/users</span>
+<span class="description">Create a new user</span>
+
+<span class="method">PUT</span><span class="url">http://localhost:3000/api/users/1</span>
+<span class="description">Update user by ID</span>
+
+<span class="method">DELETE</span><span class="url">http://localhost:3000/api/users/1</span>
+<span class="description">Delete user by ID</span></pre>
+                </div>
+            </div>
+
+            <div class="section" id="authentication">
+                <h2>Authentication</h2>
+                <div class="alert alert-success">
+                    <strong>No authentication required!</strong> All endpoints are publicly accessible and free to use.
+                </div>
+            </div>
+
+            <div class="section" id="querying">
+                <h2>Querying Data</h2>
+                <p>You can query data using various parameters to filter, sort, and paginate results.</p>
+
+                <h3>Basic Query Structure</h3>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyToClipboard('queryStructure')">Copy</button>
+                    <pre id="queryStructure"><span class="url">http://localhost:3000/api/resource?parameter=value&parameter2=value2</span></pre>
+                </div>
+            </div>
+
+            <div class="section" id="filtering">
+                <h2>Filtering</h2>
+                <p>Filter data by specific field values using various operators.</p>
+
+                <div class="example-grid">
+                    <div class="example-card">
+                        <h4>Exact Match</h4>
+                        <code>GET http://localhost:3000/api/hotels?stars=5</code>
+                        <p>Get all 5-star hotels</p>
+                    </div>
+                    <div class="example-card">
+                        <h4>Greater Than</h4>
+                        <code>GET http://localhost:3000/api/products?price_gte=100</code>
+                        <p>Products with price ≥ $100</p>
+                    </div>
+                    <div class="example-card">
+                        <h4>Less Than</h4>
+                        <code>GET http://localhost:3000/api/products?price_lte=500</code>
+                        <p>Products with price ≤ $500</p>
+                    </div>
+                    <div class="example-card">
+                        <h4>Array Contains</h4>
+                        <code>GET http://localhost:3000/api/hotels?amenities_like=Pool</code>
+                        <p>Hotels with pool amenity</p>
+                    </div>
+                    <div class="example-card">
+                        <h4>Nested Object</h4>
+                        <code>GET http://localhost:3000/api/users?address.city=Cairo</code>
+                        <p>Users from Cairo</p>
+                    </div>
+                    <div class="example-card">
+                        <h4>Multiple Filters</h4>
+                        <code>GET http://localhost:3000/api/apartments?bedrooms_gte=2&price_lte=2000</code>
+                        <p>2+ bedrooms under $2000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="pagination">
+                <h2>Pagination</h2>
+                <p>Control the number of results returned and navigate through pages.</p>
+
+                <div class="example-grid">
+                    <div class="example-card">
+                        <h4>Limit Results</h4>
+                        <code>GET http://localhost:3000/api/users?_limit=10</code>
+                        <p>Get only 10 users</p>
+                    </div>
+                    <div class="example-card">
+                        <h4>Page Navigation</h4>
+                        <code>GET http://localhost:3000/api/users?_page=2&_limit=10</code>
+                        <p>Get users 11-20</p>
+                    </div>
+                    <div class="example-card">
+                        <h4>Skip Results</h4>
+                        <code>GET http://localhost:3000/api/users?_start=20&_limit=10</code>
+                        <p>Skip first 20, get next 10</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="sorting">
+                <h2>Sorting</h2>
+                <p>Sort results by any field in ascending or descending order.</p>
+
+                <div class="example-grid">
+                    <div class="example-card">
+                        <h4>Ascending Order</h4>
+                        <code>GET http://localhost:3000/api/products?_sort=price&_order=asc</code>
+                        <p>Sort products by price (low to high)</p>
+                    </div>
+                    <div class="example-card">
+                        <h4>Descending Order</h4>
+                        <code>GET http://localhost:3000/api/hotels?_sort=rating&_order=desc</code>
+                        <p>Sort hotels by rating (high to low)</p>
+                    </div>
+                    <div class="example-card">
+                        <h4>Multiple Fields</h4>
+                        <code>GET http://localhost:3000/api/jobs?_sort=salary,title&_order=desc,asc</code>
+                        <p>Sort by salary desc, then title asc</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="search">
+                <h2>Search</h2>
+                <p>Search across all text fields in a resource.</p>
+
+                <div class="example-grid">
+                    <div class="example-card">
+                        <h4>Text Search</h4>
+                        <code>GET http://localhost:3000/api/products?q=laptop</code>
+                        <p>Search for products containing "laptop"</p>
+                    </div>
+                    <div class="example-card">
+                        <h4>Hotel Search</h4>
+                        <code>GET http://localhost:3000/api/hotels?q=resort</code>
+                        <p>Search for hotels containing "resort"</p>
+                    </div>
+                    <div class="example-card">
+                        <h4>Job Search</h4>
+                        <code>GET http://localhost:3000/api/jobs?q=developer</code>
+                        <p>Search for jobs containing "developer"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="examples">
+                <h2>Real-World Examples</h2>
+                <p>Here are some practical examples you can use in your applications.</p>
+
+                <h3>E-commerce Examples</h3>
+                <div class="request-response">
+                    <div class="request-block">
+                        <button class="copy-btn" onclick="copyToClipboard('ecommerceRequest')">Copy</button>
+                        <h4>Request</h4>
+                        <pre id="ecommerceRequest">GET http://localhost:3000/api/products?rating_gte=4.5&_limit=6</pre>
+                    </div>
+                    <div class="response-block">
+                        <button class="copy-btn" onclick="copyToClipboard('ecommerceResponse')">Copy</button>
+                        <h4>Response</h4>
+                        <pre id="ecommerceResponse">[
+  {
+    "id": 1,
+    "name": "Wireless Bluetooth Headphones",
+    "price": 199.99,
+    "rating": 4.8,
+    "category": "Electronics"
+  },
+  {
+    "id": 2,
+    "name": "Smart Fitness Watch",
+    "price": 299.99,
+    "rating": 4.7,
+    "category": "Electronics"
+  }
+]</pre>
+                    </div>
+                </div>
+
+                <h3>Real Estate Examples</h3>
+                <div class="request-response">
+                    <div class="request-block">
+                        <button class="copy-btn" onclick="copyToClipboard('realestateRequest')">Copy</button>
+                        <h4>Request</h4>
+                        <pre id="realestateRequest">GET http://localhost:3000/api/hotels?stars=5&amenities_like=Spa&_sort=rating&_order=desc</pre>
+                    </div>
+                    <div class="response-block">
+                        <button class="copy-btn" onclick="copyToClipboard('realestateResponse')">Copy</button>
+                        <h4>Response</h4>
+                        <pre id="realestateResponse">[
+  {
+    "id": 1,
+    "name": "Nile Palace Hotel",
+    "stars": 5,
+    "rating": 4.8,
+    "amenities": ["WiFi", "Pool", "Spa", "Restaurant"],
+    "price_range": "$$$$"
+  },
+  {
+    "id": 6,
+    "name": "Hurghada Marina Hotel",
+    "stars": 5,
+    "rating": 4.8,
+    "amenities": ["Marina View", "Spa", "Diving Center"],
+    "price_range": "$$$$"
+  }
+]</pre>
+                    </div>
+                </div>
+
+                <h3>Job Board Examples</h3>
+                <div class="request-response">
+                    <div class="request-block">
+                        <button class="copy-btn" onclick="copyToClipboard('jobsRequest')">Copy</button>
+                        <h4>Request</h4>
+                        <pre id="jobsRequest">GET http://localhost:3000/api/jobs?salary_gte=8000&_sort=salary&_order=desc&_limit=5</pre>
+                    </div>
+                    <div class="response-block">
+                        <button class="copy-btn" onclick="copyToClipboard('jobsResponse')">Copy</button>
+                        <h4>Response</h4>
+                        <pre id="jobsResponse">[
+  {
+    "id": 1,
+    "title": "Cybersecurity Specialist",
+    "company": "TechCorp Solutions",
+    "salary": "$9000-14000",
+    "location": "Cairo"
+  },
+  {
+    "id": 2,
+    "title": "Senior Software Engineer",
+    "company": "Innovation Labs",
+    "salary": "$8000-12000",
+    "location": "Alexandria"
+  }
+]</pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="resources">
+                <h2>Available Resources</h2>
+                <p>Explore all available resources and their data counts.</p>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Resource</th>
+                                <th>Endpoint</th>
+                                <th>Count</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="resource-badge">Users</span></td>
+                                <td><code>http://localhost:3000/api/users</code></td>
+                                <td>30</td>
+                                <td>User profiles with addresses</td>
+                            </tr>
+                            <tr>
+                                <td><span class="resource-badge">Products</span></td>
+                                <td><code>http://localhost:3000/api/products</code></td>
+                                <td>30</td>
+                                <td>E-commerce products</td>
+                            </tr>
+                            <tr>
+                                <td><span class="resource-badge">Hotels</span></td>
+                                <td><code>http://localhost:3000/api/hotels</code></td>
+                                <td>30</td>
+                                <td>Hotel accommodations</td>
+                            </tr>
+                            <tr>
+                                <td><span class="resource-badge">Jobs</span></td>
+                                <td><code>http://localhost:3000/api/jobs</code></td>
+                                <td>40</td>
+                                <td>Job listings</td>
+                            </tr>
+                            <tr>
+                                <td><span class="resource-badge">Apartments</span></td>
+                                <td><code>http://localhost:3000/api/apartments</code></td>
+                                <td>35</td>
+                                <td>Real estate listings</td>
+                            </tr>
+                            <tr>
+                                <td><span class="resource-badge">Companies</span></td>
+                                <td><code>http://localhost:3000/api/companies</code></td>
+                                <td>30</td>
+                                <td>Business profiles</td>
+                            </tr>
+                            <tr>
+                                <td><span class="resource-badge">Schools</span></td>
+                                <td><code>http://localhost:3000/api/schools</code></td>
+                                <td>30</td>
+                                <td>Educational institutions</td>
+                            </tr>
+                            <tr>
+                                <td><span class="resource-badge">Hospitals</span></td>
+                                <td><code>http://localhost:3000/api/hospitals</code></td>
+                                <td>30</td>
+                                <td>Healthcare facilities</td>
+                            </tr>
+                            <tr>
+                                <td><span class="resource-badge">Cars</span></td>
+                                <td><code>http://localhost:3000/api/cars</code></td>
+                                <td>30</td>
+                                <td>Vehicle listings</td>
+                            </tr>
+                            <tr>
+                                <td><span class="resource-badge">Pets</span></td>
+                                <td><code>http://localhost:3000/api/pets</code></td>
+                                <td>30</td>
+                                <td>Pet profiles</td>
+                            </tr>
+                            <tr>
+                                <td><span class="resource-badge">Services</span></td>
+                                <td><code>http://localhost:3000/api/services</code></td>
+                                <td>29</td>
+                                <td>Service providers</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="section" id="error-handling">
+                <h2>Error Handling</h2>
+                <p>All errors return appropriate HTTP status codes and helpful error messages.</p>
+
+                <h3>Common Error Responses</h3>
+                <div class="example-grid">
+                    <div class="example-card">
+                        <h4>404 Not Found</h4>
+                        <code>GET http://localhost:3000/api/nonexistent</code>
+                        <p>Resource doesn't exist</p>
+                    </div>
+                    <div class="example-card">
+                        <h4>400 Bad Request</h4>
+                        <code>POST http://localhost:3000/api/users</code>
+                        <p>Invalid request data</p>
+                    </div>
+                    <div class="example-card">
+                        <h4>500 Server Error</h4>
+                        <code>Any endpoint</code>
+                        <p>Internal server error</p>
+                    </div>
+                </div>
+
+                <h3>Error Response Format</h3>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyToClipboard('errorFormat')">Copy</button>
+                    <pre id="errorFormat">{
+  "error": "Endpoint not found",
+  "message": "The endpoint /api/nonexistent does not exist",
+  "availableEndpoints": "/api"
+}</pre>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Ready to Get Started?</h2>
+                <div class="alert alert-success">
+                    <strong>Start building!</strong> Your API is ready to use. No setup required, no authentication needed.
+                </div>
+                
+                <p>Try these quick examples in your browser or with tools like Postman:</p>
+                <ul>
+                    <li><code>GET http://localhost:3000/api/users</code> - Get all users</li>
+                    <li><code>GET http://localhost:3000/api/products?q=laptop</code> - Search for laptops</li>
+                    <li><code>GET http://localhost:3000/api/hotels?stars=5</code> - Find 5-star hotels</li>
+                    <li><code>GET http://localhost:3000/api/jobs?_sort=salary&_order=desc</code> - Highest paying jobs</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 Fake API. Built with ❤️ for the developer community</p>
+            <p>Free to use • No authentication required • Open source</p>
+        </div>
+    </div>
+
+    <script>
+        // Copy to clipboard function
+        function copyToClipboard(elementId) {
+            const element = document.getElementById(elementId);
+            const text = element.textContent || element.innerText;
+            
+            navigator.clipboard.writeText(text).then(() => {
+                const button = event.target;
+                button.classList.add('copied');
+                const originalText = button.textContent;
+                button.textContent = 'Copied!';
+                
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+
+        // Update base URL dynamically
+        document.addEventListener('DOMContentLoaded', function() {
+            const baseUrlElement = document.getElementById('baseUrl');
+            if (baseUrlElement) {
+                const baseUrl = window.location.protocol + '//' + window.location.host + '/api';
+                baseUrlElement.textContent = baseUrl;
+            }
+        });
+    </script>
+</body>
+</html> 
