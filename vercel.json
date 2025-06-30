@@ -2,14 +2,112 @@
   "version": 2,
   "name": "fake-api",
   "functions": {
-    "api/users.js": {
-      "runtime": "nodejs18.x"
-    }
+    "api/users.js": { "runtime": "nodejs18.x" },
+    "api/categories.js": { "runtime": "nodejs18.x" },
+    "api/products.js": { "runtime": "nodejs18.x" },
+    "api/reviews.js": { "runtime": "nodejs18.x" },
+    "api/orders.js": { "runtime": "nodejs18.x" },
+    "api/posts.js": { "runtime": "nodejs18.x" },
+    "api/comments.js": { "runtime": "nodejs18.x" },
+    "api/books.js": { "runtime": "nodejs18.x" },
+    "api/albums.js": { "runtime": "nodejs18.x" },
+    "api/photos.js": { "runtime": "nodejs18.x" },
+    "api/apartments.js": { "runtime": "nodejs18.x" },
+    "api/companies.js": { "runtime": "nodejs18.x" },
+    "api/jobs.js": { "runtime": "nodejs18.x" },
+    "api/events.js": { "runtime": "nodejs18.x" },
+    "api/restaurants.js": { "runtime": "nodejs18.x" },
+    "api/hotels.js": { "runtime": "nodejs18.x" },
+    "api/schools.js": { "runtime": "nodejs18.x" },
+    "api/hospitals.js": { "runtime": "nodejs18.x" },
+    "api/cars.js": { "runtime": "nodejs18.x" },
+    "api/pets.js": { "runtime": "nodejs18.x" },
+    "api/services.js": { "runtime": "nodejs18.x" }
   },
   "routes": [
     {
       "src": "/api/users",
       "dest": "/api/users.js"
+    },
+    {
+      "src": "/api/categories",
+      "dest": "/api/categories.js"
+    },
+    {
+      "src": "/api/products",
+      "dest": "/api/products.js"
+    },
+    {
+      "src": "/api/reviews",
+      "dest": "/api/reviews.js"
+    },
+    {
+      "src": "/api/orders",
+      "dest": "/api/orders.js"
+    },
+    {
+      "src": "/api/posts",
+      "dest": "/api/posts.js"
+    },
+    {
+      "src": "/api/comments",
+      "dest": "/api/comments.js"
+    },
+    {
+      "src": "/api/books",
+      "dest": "/api/books.js"
+    },
+    {
+      "src": "/api/albums",
+      "dest": "/api/albums.js"
+    },
+    {
+      "src": "/api/photos",
+      "dest": "/api/photos.js"
+    },
+    {
+      "src": "/api/apartments",
+      "dest": "/api/apartments.js"
+    },
+    {
+      "src": "/api/companies",
+      "dest": "/api/companies.js"
+    },
+    {
+      "src": "/api/jobs",
+      "dest": "/api/jobs.js"
+    },
+    {
+      "src": "/api/events",
+      "dest": "/api/events.js"
+    },
+    {
+      "src": "/api/restaurants",
+      "dest": "/api/restaurants.js"
+    },
+    {
+      "src": "/api/hotels",
+      "dest": "/api/hotels.js"
+    },
+    {
+      "src": "/api/schools",
+      "dest": "/api/schools.js"
+    },
+    {
+      "src": "/api/hospitals",
+      "dest": "/api/hospitals.js"
+    },
+    {
+      "src": "/api/cars",
+      "dest": "/api/cars.js"
+    },
+    {
+      "src": "/api/pets",
+      "dest": "/api/pets.js"
+    },
+    {
+      "src": "/api/services",
+      "dest": "/api/services.js"
     },
     {
       "src": "/(.*)",

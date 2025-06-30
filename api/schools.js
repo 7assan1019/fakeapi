@@ -1,13 +1,13 @@
-const users = [
+const schools = [
   {
     "id": 1,
-    "name": "Sample user",
-    "description": "This is a sample user for testing"
+    "name": "Sample school",
+    "description": "This is a sample school for testing"
   },
   {
     "id": 2,
-    "name": "Another user",
-    "description": "Another sample user for testing"
+    "name": "Another school",
+    "description": "Another sample school for testing"
   }
 ];
 
@@ -22,5 +22,5 @@ module.exports = (req, res) => {
   }
   
   res.setHeader('Content-Type', 'application/json');
-  res.status(200).json(users);
+  res.status(200).json(schools);
 };

@@ -1,13 +1,13 @@
-const users = [
+const jobs = [
   {
     "id": 1,
-    "name": "Sample user",
-    "description": "This is a sample user for testing"
+    "name": "Sample job",
+    "description": "This is a sample job for testing"
   },
   {
     "id": 2,
-    "name": "Another user",
-    "description": "Another sample user for testing"
+    "name": "Another job",
+    "description": "Another sample job for testing"
   }
 ];
 
@@ -22,5 +22,5 @@ module.exports = (req, res) => {
   }
   
   res.setHeader('Content-Type', 'application/json');
-  res.status(200).json(users);
+  res.status(200).json(jobs);
 };
